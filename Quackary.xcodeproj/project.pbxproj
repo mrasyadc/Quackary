@@ -12,6 +12,7 @@
 		9DC119782C1957ED00ECF58C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119772C1957ED00ECF58C /* Item.swift */; };
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
+		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9DC119772C1957ED00ECF58C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				9DC119732C1957ED00ECF58C /* QuackaryApp.swift */,
 				9DC119752C1957ED00ECF58C /* ContentView.swift */,
 				9DC119772C1957ED00ECF58C /* Item.swift */,
+				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
 				9DC119792C1957EE00ECF58C /* Assets.xcassets */,
 				9DC1197B2C1957EE00ECF58C /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
+				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
 			);

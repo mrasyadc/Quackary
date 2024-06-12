@@ -5,8 +5,8 @@
 //  Created by Muhammad Rasyad Caesarardhi on 12/06/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct QuackaryApp: App {
@@ -25,7 +25,7 @@ struct QuackaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ShakeView()
         }
         .modelContainer(sharedModelContainer)
     }
