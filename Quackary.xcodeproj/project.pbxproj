@@ -13,6 +13,9 @@
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
 		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
+		E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */; };
+		E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */; };
+		E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
+		E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
+		E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
+		E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,11 @@
 		9DC119722C1957ED00ECF58C /* Quackary */ = {
 			isa = PBXGroup;
 			children = (
+				E4DC6C252C1967D900DB851F /* Util */,
+				E4DC6C242C19675700DB851F /* ViewModel */,
+				E4DC6C232C19674F00DB851F /* View */,
+				E4DC6C222C19674500DB851F /* Model */,
 				9DC119732C1957ED00ECF58C /* QuackaryApp.swift */,
-				9DC119752C1957ED00ECF58C /* ContentView.swift */,
-				9DC119772C1957ED00ECF58C /* Item.swift */,
-				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
 				9DC119792C1957EE00ECF58C /* Assets.xcassets */,
 				9DC1197B2C1957EE00ECF58C /* Preview Content */,
 			);
@@ -71,6 +78,40 @@
 				9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4DC6C222C19674500DB851F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DC119772C1957ED00ECF58C /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4DC6C232C19674F00DB851F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DC119752C1957ED00ECF58C /* ContentView.swift */,
+				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4DC6C242C19675700DB851F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4DC6C252C1967D900DB851F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */,
+				E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
+				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,
+				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
+				E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -288,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -317,6 +362,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
