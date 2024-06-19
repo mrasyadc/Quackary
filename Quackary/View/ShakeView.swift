@@ -6,6 +6,9 @@ struct ShakeView: View {
 
     var body: some View {
         VStack {
+            Text("Shake me! Lato").font(.custom("Lato-Black", size:24))
+            Text("Shake me! Lato").font(.custom("Lato-Italic", size:24))
+            Text("Shake me! Lato").font(.custom("Lato-Regular", size:24))
             Text("Shake me!")
                 .onShake {
                     viewModel.shakeDetected = true
@@ -23,8 +26,8 @@ struct ShakeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ShakeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ShakeView()
     }
 }
