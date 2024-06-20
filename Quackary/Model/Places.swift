@@ -18,8 +18,11 @@ final class Places {
     var openingHour: String
     var closingHour: String
     var imageNames: [String]
-
-    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String]) {
+    var foods: [FoodType]
+    var isFav: Bool
+    var isRestrict: Bool
+    
+    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: [FoodType]) {
         self.placeId = NSUUID() as UUID
         self.name = name
         self.lat = lat
@@ -28,5 +31,14 @@ final class Places {
         self.openingHour = openingHour
         self.closingHour = closingHour
         self.imageNames = imageNames
+        self.foods = foods
+        self.isFav = false
+        self.isRestrict = false
     }
+    
+    func getIsOpen(placeId) {}
+    
+    func setPlaceToFav() {}
+    
+    func setPlaceToRestrict() {}
 }

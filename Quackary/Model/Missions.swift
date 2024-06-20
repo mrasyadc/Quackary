@@ -14,14 +14,43 @@ final class Missions {
     var name: String
     var placeId: UUID
     var type: MissionType
-    var isHidden: Bool
+    var isMissionHidden: Bool
+    var isPlaceHidden: Bool
+    var isDone: Bool
+    var doneTimestamp: Date?
+    var photoName: String?
+    var writing: String?
+    var rewardImageName: String
+    var deadlineDate: Date?
+    var rewardXPositionInScreen: Float?
+    var rewardYPositionInScreen: Float?
 
     init(name: String, placeId: UUID, type: MissionType, isHidden: Bool) {
         self.missionId = NSUUID() as UUID
         self.name = name
         self.placeId = placeId
         self.type = type
-        self.isHidden = isHidden
+        self.isMissionHidden = true
+        self.isPlaceHidden = true
+        self.isDone = false
+        self.doneTimestamp = nil
+        
+    }
+    
+    func getPositionForNewReward() {
+        
+    }
+    
+    func setMissionFinished(missionId: UUID) {
+        
+    }
+    
+    func getSurpriseMission() {
+        
+    }
+    
+    func getPreferredMission() {
+        
     }
 }
 
