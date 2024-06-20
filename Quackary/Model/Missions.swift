@@ -12,7 +12,7 @@ import SwiftData
 final class Missions {
     var missionId: UUID
     var name: String
-    var placeId: UUID
+    var place: Places
     var type: MissionType
     var isMissionHidden: Bool
     var isPlaceHidden: Bool
@@ -25,33 +25,24 @@ final class Missions {
     var rewardXPositionInScreen: Float?
     var rewardYPositionInScreen: Float?
 
-    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool) {
+    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool, place: Places) {
         self.missionId = NSUUID() as UUID
         self.name = name
-        self.placeId = placeId
+        self.place = place
         self.type = type
         self.isMissionHidden = true
         self.isPlaceHidden = true
         self.isDone = false
         self.doneTimestamp = nil
-        
     }
-    
-    func getPositionForNewReward() {
-        
-    }
-    
-    func setMissionFinished(missionId: UUID) {
-        
-    }
-    
-    func getSurpriseMission() {
-        
-    }
-    
-    func getPreferredMission() {
-        
-    }
+
+    func getPositionForNewReward() {}
+
+    func setMissionFinished(missionId: UUID) {}
+
+    func getSurpriseMission() {}
+
+    func getPreferredMission() {}
 }
 
 enum MissionType {

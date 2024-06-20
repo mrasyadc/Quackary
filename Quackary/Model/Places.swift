@@ -36,7 +36,7 @@ final class Places {
         self.isRestrict = false
     }
     
-    func getIsOpen(placeId) {}
+    func getIsOpen(placeId: UUID) {}
     
     func setPlaceToFav() {}
     
