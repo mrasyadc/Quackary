@@ -12,34 +12,72 @@ import SwiftData
 final class User {
     var userId: UUID
     var name: String
-    private var preferences: [PreferenceType]
-    private var surprises: [PreferenceType]
-    private var restrict: [PreferenceType]
+    private var preferences: Set<PreferenceType>
+    private var surprises: Set<PreferenceType>
+    private var restricts: Set<RestrictType>
 
-    init(name: String, preferences: [PreferenceType], restrict: [PreferenceType]) {
+    init(name: String, preferences: Set<PreferenceType>, restrict: Set<RestrictType>) {
         self.userId = NSUUID() as UUID
         self.name = name
         self.preferences = preferences
         self.restrict = restrict
+        self.surprises = getSurpriseSetFromPreferenceSetSubstractRestrictSet(preferences, restrict)
 
         // surprises itu UNION Preferences - UNION restrict
         // TODO: Lanjutkan self.surprises
         // self.surprises =
     }
 
-    func getUserPreferences() {}
+    func getUserPreferences() -> Set<PreferenceType> {
+        return preferences
+    }
 
-    func getUserSurprises() {}
+    func getUserSurprises() -> Set<PreferenceType> {
+        return surprises
+    }
 
-    func getUserRestricts() {}
+    func getUserRestricts() -> Set<RestrictType> {
+        return restricts
+    }
 
-    private func setSurprises(newPreferences: [PreferenceType]) {}
+    private func setSurprises(newPreferences: Set<PreferenceType>, newRestricts: Set<RestrictType>) {
+//        KOK GABISA SELF.SURPRISE??!!! APA K
+        surprises = getSurpriseSetFromPreferenceSetSubstractRestrictSet(newPreferences, newRestricts)
+    }
 
-    private func setRestricts(newRestricts: [RestrictType]) {}
+    private func setRestricts(newRestricts: Set<RestrictType>) {
+        restricts = newRestricts
+    }
 
-    func setUserPreferences(newPreferences: [PreferenceType], newRestricts: [RestrictType]) {
-        setSurprises(newPreferences: newPreferences)
+    private func setPreferences(newPreferences: Set<PreferenceType>) {
+        preferences = newPreferences
+    }
+
+    func setUserPreferences(newPreferences: Set<PreferenceType>, newRestricts: Set<RestrictType>) {
+        setPreferences(newPreferences: newPreferences)
+        setSurprises(newPreferences: newPreferences, newRestricts: newRestricts)
         setRestricts(newRestricts: newRestricts)
+    }
+
+    private func getSurpriseSetFromPreferenceSetSubstractRestrictSet(_ PreferencesToSubstract: Set<PreferenceType>, _ RestrictForSubtractTo: Set<RestrictType>) -> Set<PreferenceType> {
+        // Convert RestrictType set to PreferenceType set
+        var mappedRestrictSet = Set(restrict.compactMap { mapToPreferenceType(restrict: $0) })
+
+        // Perform the subtraction
+        var resultSet = preferences.subtracting(mappedRestrictSet)
+
+        return resultSet
+    }
+
+    private func mapToPreferenceType(restrict: RestrictType) -> PreferenceType? {
+        switch restrict {
+        case .Beef: return .Beef
+        case .Fish: return .Fish
+        case .Milk: return .Milk
+        case .Pork: return .Pork
+        // Add cases for other restrictions that map to preferences if needed
+        default: return nil
+        }
     }
 }
 
