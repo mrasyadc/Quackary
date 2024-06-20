@@ -18,15 +18,44 @@ final class Achievement {
     var isDone: Bool
 
     init(name: String, detail: String, imageName: String) {
-        self.achievementId = NSUUID() as UUID
+        self.achievementId = UUID()
         self.name = name
         self.detail = detail
         self.imageName = imageName
-        self.isDone = false
+        self.isDone = true
         self.timestamp = nil
     }
+}
 
-    func getFinishedAchievements() {}
+final class Achievements {
+    private var achievements: [UUID: Achievement] = [:]
 
-    func setAchievementToFinish(achievementId: UUID) {}
+    // Add a new achievement
+    func addAchievement(name: String, detail: String, imageName: String) {
+        let achievement = Achievement(name: name, detail: detail, imageName: imageName)
+        achievements[achievement.achievementId] = achievement
+    }
+
+    // Get all finished achievements
+    func getFinishedAchievements() -> [Achievement] {
+        return achievements.values.filter { $0.isDone }
+    }
+
+    // Set a specific achievement to finished
+    func setAchievementToFinish(achievementId: UUID) {
+        if let achievement = achievements[achievementId] {
+            achievement.isDone = true
+            achievement.timestamp = Date()
+        }
+    }
+
+    // Get all achievements
+    func getAllAchievements() -> [Achievement] {
+        return Array(achievements.values)
+    }
+
+    // Find an achievement by ID
+    func findAchievement(by id: UUID) -> Achievement? {
+        return achievements[id]
+    }
 }

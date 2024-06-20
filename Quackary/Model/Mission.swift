@@ -34,6 +34,12 @@ final class Mission {
         self.isPlaceHidden = true
         self.isDone = false
         self.doneTimestamp = nil
+        self.photoName = nil
+        self.writing = nil
+        self.rewardImageName = "nil"
+        self.deadlineDate = nil
+        self.rewardXPositionInScreen = nil
+        self.rewardYPositionInScreen = nil
     }
 
     func getPositionForNewReward() {}
@@ -45,6 +51,6 @@ final class Mission {
     func getPreferredMission() {}
 }
 
-enum MissionType {
+enum MissionType: Codable, Hashable, Equatable {
     case Regular, LimitedTime
 }

@@ -12,17 +12,17 @@ import SwiftData
 final class User {
     var userId: UUID
     var name: String
-    private var preferences: Set<PreferenceType>
-    private var surprises: Set<PreferenceType>
-    private var restricts: Set<RestrictType>
+    private var preferences: Set<PreferenceType> = []
+    private var surprises: Set<PreferenceType> = []
+    private var restricts: Set<RestrictType> = []
 
-    init(name: String, preferences: Set<PreferenceType>, restrict: Set<RestrictType>) {
+    init(name: String, preferences: Set<PreferenceType>, restricts: Set<RestrictType>) {
         self.userId = NSUUID() as UUID
         self.name = name
         self.preferences = preferences
-        self.restrict = restrict
-        self.surprises = getSurpriseSetFromPreferenceSetSubstractRestrictSet(preferences, restrict)
-
+        self.restricts = restricts
+        self.surprises = getSurpriseSetFromPreferenceSetSubstractRestrictSet(preferences, restricts)
+//        self.surprises = [.Beef]
         // surprises itu UNION Preferences - UNION restrict
         // TODO: Lanjutkan self.surprises
         // self.surprises =
@@ -61,7 +61,7 @@ final class User {
 
     private func getSurpriseSetFromPreferenceSetSubstractRestrictSet(_ PreferencesToSubstract: Set<PreferenceType>, _ RestrictForSubtractTo: Set<RestrictType>) -> Set<PreferenceType> {
         // Convert RestrictType set to PreferenceType set
-        var mappedRestrictSet = Set(restrict.compactMap { mapToPreferenceType(restrict: $0) })
+        var mappedRestrictSet = Set(restricts.compactMap { mapToPreferenceType(restrict: $0) })
 
         // Perform the subtraction
         var resultSet = preferences.subtracting(mappedRestrictSet)
@@ -81,10 +81,10 @@ final class User {
     }
 }
 
-enum PreferenceType {
+enum PreferenceType: Hashable, Codable, Equatable {
     case Beef, Bento, Cheese, Chicken, Duck, Egg, Fish, FriesFood, Fruit, Lamb, Martabak, Meatball, Milk, Pasta, Pizza, PlantBased, Pork, Porridge, Ramen, Rea, Salad, Sandiwch, Satay, Soup, Steak, Sushi, Tempeh, Tofu, Vegetable, Yogurt
 }
 
-enum RestrictType {
+enum RestrictType: Hashable, Codable, Equatable {
     case Alcohol, TreeNuts, Beef, Wheat, Shrimp, Fish, Gluten, Pork, Seafood, Milk, Soy, Peanuts, Eggs, Dairy, Sesame, Shellfish
 }
