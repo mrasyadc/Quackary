@@ -9,10 +9,10 @@ import Foundation
 import SwiftData
 
 @Model
-final class Missions {
+final class Mission {
     var missionId: UUID
     var name: String
-    var place: Places
+    var place: Place?
     var type: MissionType
     var isMissionHidden: Bool
     var isPlaceHidden: Bool
@@ -25,7 +25,7 @@ final class Missions {
     var rewardXPositionInScreen: Float?
     var rewardYPositionInScreen: Float?
 
-    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool, place: Places) {
+    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool, place: Place) {
         self.missionId = NSUUID() as UUID
         self.name = name
         self.place = place

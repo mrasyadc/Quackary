@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Achievements {
+final class Achievement {
     var achievementId: UUID
     var name: String
     var detail: String

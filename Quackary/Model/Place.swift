@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Places {
+final class Place {
     var placeId: UUID
     var name: String
     var lat: Float64
