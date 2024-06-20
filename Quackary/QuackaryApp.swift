@@ -13,6 +13,7 @@ struct QuackaryApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+            Achievement.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +26,7 @@ struct QuackaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ShakeView()
+            AchievementView()
         }
         .modelContainer(sharedModelContainer)
     }

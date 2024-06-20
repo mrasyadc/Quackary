@@ -9,10 +9,10 @@ import Foundation
 import SwiftData
 
 @Model
-final class Missions {
+final class Mission {
     var missionId: UUID
     var name: String
-    var placeId: UUID
+    var place: Place?
     var type: MissionType
     var isMissionHidden: Bool
     var isPlaceHidden: Bool
@@ -25,35 +25,32 @@ final class Missions {
     var rewardXPositionInScreen: Float?
     var rewardYPositionInScreen: Float?
 
-    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool) {
+    init(name: String, placeId: UUID, type: MissionType, isHidden: Bool, place: Place) {
         self.missionId = NSUUID() as UUID
         self.name = name
-        self.placeId = placeId
+        self.place = place
         self.type = type
         self.isMissionHidden = true
         self.isPlaceHidden = true
         self.isDone = false
         self.doneTimestamp = nil
-        
+        self.photoName = nil
+        self.writing = nil
+        self.rewardImageName = "nil"
+        self.deadlineDate = nil
+        self.rewardXPositionInScreen = nil
+        self.rewardYPositionInScreen = nil
     }
-    
-    func getPositionForNewReward() {
-        
-    }
-    
-    func setMissionFinished(missionId: UUID) {
-        
-    }
-    
-    func getSurpriseMission() {
-        
-    }
-    
-    func getPreferredMission() {
-        
-    }
+
+    func getPositionForNewReward() {}
+
+    func setMissionFinished(missionId: UUID) {}
+
+    func getSurpriseMission() {}
+
+    func getPreferredMission() {}
 }
 
-enum MissionType {
-    case a, b, c
+enum MissionType: Codable, Hashable, Equatable {
+    case Regular, LimitedTime
 }

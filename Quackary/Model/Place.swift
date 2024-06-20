@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Places {
+final class Place {
     var placeId: UUID
     var name: String
     var lat: Float64
@@ -18,11 +18,11 @@ final class Places {
     var openingHour: String
     var closingHour: String
     var imageNames: [String]
-    var foods: [FoodType]
+    var foods: Set<PreferenceType>
     var isFav: Bool
     var isRestrict: Bool
     
-    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: [FoodType]) {
+    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: Set<PreferenceType>) {
         self.placeId = NSUUID() as UUID
         self.name = name
         self.lat = lat
@@ -36,7 +36,7 @@ final class Places {
         self.isRestrict = false
     }
     
-    func getIsOpen(placeId) {}
+    func getIsOpen(placeId: UUID) {}
     
     func setPlaceToFav() {}
     
