@@ -46,5 +46,5 @@ final class Mission {
 }
 
 enum MissionType {
-    case a, b, c
+    case Regular, LimitedTime
 }

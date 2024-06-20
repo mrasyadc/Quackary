@@ -18,11 +18,11 @@ final class Place {
     var openingHour: String
     var closingHour: String
     var imageNames: [String]
-    var foods: [FoodType]
+    var foods: [PreferenceType]
     var isFav: Bool
     var isRestrict: Bool
     
-    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: [FoodType]) {
+    init(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: [PreferenceType]) {
         self.placeId = NSUUID() as UUID
         self.name = name
         self.lat = lat
