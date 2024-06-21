@@ -38,6 +38,16 @@ class HapticUtils {
             _runHaptic()
         }
     }
+    
+    static func runHapticThreeTimes() {
+        DispatchQueue.global().async {
+            _runHaptic()
+            usleep(200000)
+            _runHaptic()
+            usleep(200000)
+            _runHaptic()
+        }
+    }
 }
 
 //    static func runHapticOnMainThread() {

@@ -5,8 +5,8 @@
 //  Created by Romi Fadhurohman Nabil on 12/06/24.
 //
 
-import Foundation
 import Combine
+import Foundation
 import SwiftUI
 
 // ViewModel to handle shake detection logic
