@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftData
 
 final class Missions {
     private var missions: [UUID: Mission] = [:]
+    init(missions: [UUID: Mission]) {
+        self.missions = missions
+    }
 
     func addMission(name: String, type: MissionType, place: Place? = nil, isHidden: Bool = true) {
         let mission = Mission(name: name, type: type, place: place, isHidden: isHidden)

@@ -6,9 +6,14 @@
 //
 
 import Foundation
+import SwiftData
 
+@Model
 final class Achievements {
     private var achievements: [UUID: Achievement] = [:]
+    init(achievements: [UUID: Achievement]) {
+        self.achievements = achievements
+    }
 
     // Add a new achievement
     func addAchievement(name: String, detail: String, imageName: String) {
