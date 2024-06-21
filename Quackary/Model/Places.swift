@@ -10,6 +10,9 @@ import SwiftData
 
 final class Places {
     private var places: [UUID: Place] = [:]
+    init(places: [UUID: Place]) {
+        self.places = places
+    }
 
     func addPlace(name: String, lat: Float64, long: Float64, priceRange: Int, openingHour: String, closingHour: String, imageNames: [String], foods: Set<PreferenceType>) {
         let place = Place(name: name, lat: lat, long: long, priceRange: priceRange, openingHour: openingHour, closingHour: closingHour, imageNames: imageNames, foods: foods)
