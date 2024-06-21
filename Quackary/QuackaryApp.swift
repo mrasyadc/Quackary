@@ -26,7 +26,7 @@ struct QuackaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AchievementView()
+            GachaView()
         }
         .modelContainer(sharedModelContainer)
     }
