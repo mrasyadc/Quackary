@@ -7,18 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D870E622C252BA8002071FC /* LoopingVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */; };
+		9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */; };
+		9D870E662C252C1B002071FC /* LooperVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E652C252C1B002071FC /* LooperVideoView.swift */; };
+		9D870E682C2558F6002071FC /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E672C2558F6002071FC /* Achievements.swift */; };
+		9D870E6A2C255925002071FC /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E692C255925002071FC /* Missions.swift */; };
+		9D870E6C2C25594A002071FC /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E6B2C25594A002071FC /* Places.swift */; };
+		9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3882C227B03001590F4 /* AudioManager.swift */; };
+		9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD38A2C227C18001590F4 /* HapticManager.swift */; };
+		9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */; };
+		9DAAD39A2C227FFF001590F4 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD38E2C227FFF001590F4 /* Lato-BlackItalic.ttf */; };
+		9DAAD39B2C227FFF001590F4 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD38F2C227FFF001590F4 /* Lato-Bold.ttf */; };
+		9DAAD39C2C227FFF001590F4 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3902C227FFF001590F4 /* Lato-BoldItalic.ttf */; };
+		9DAAD39D2C227FFF001590F4 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3912C227FFF001590F4 /* Lato-Italic.ttf */; };
+		9DAAD39E2C227FFF001590F4 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3922C227FFF001590F4 /* Lato-Light.ttf */; };
+		9DAAD39F2C227FFF001590F4 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3932C227FFF001590F4 /* Lato-LightItalic.ttf */; };
+		9DAAD3A02C227FFF001590F4 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3942C227FFF001590F4 /* Lato-Regular.ttf */; };
+		9DAAD3A12C227FFF001590F4 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3952C227FFF001590F4 /* Lato-Thin.ttf */; };
+		9DAAD3A22C227FFF001590F4 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3962C227FFF001590F4 /* Lato-ThinItalic.ttf */; };
+		9DAAD3A32C227FFF001590F4 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3972C227FFF001590F4 /* OFL.txt */; };
+		9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3A52C2287AF001590F4 /* FontView.swift */; };
 		9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119732C1957ED00ECF58C /* QuackaryApp.swift */; };
 		9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119752C1957ED00ECF58C /* ContentView.swift */; };
 		9DC119782C1957ED00ECF58C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119772C1957ED00ECF58C /* Item.swift */; };
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
 		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
+		9DE706F02C22AC8400A419E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706EF2C22AC8400A419E6 /* User.swift */; };
+		9DE706F22C239D5C00A419E6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F12C239D5C00A419E6 /* Place.swift */; };
+		9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F32C239E7D00A419E6 /* Achievement.swift */; };
+		9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F52C239F7A00A419E6 /* Mission.swift */; };
+		9DE706F82C242DAC00A419E6 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */; };
+		9DE706FA2C242E9300A419E6 /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F92C242E9300A419E6 /* AchievementView.swift */; };
+		9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706FD2C2510F800A419E6 /* GachaView.swift */; };
+		9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */; };
+		9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */; };
+		9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */; };
 		E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */; };
 		E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */; };
 		E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoViewController.swift; sourceTree = "<group>"; };
+		9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUIView.swift; sourceTree = "<group>"; };
+		9D870E652C252C1B002071FC /* LooperVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooperVideoView.swift; sourceTree = "<group>"; };
+		9D870E672C2558F6002071FC /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		9D870E692C255925002071FC /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
+		9D870E6B2C25594A002071FC /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		9DAAD3882C227B03001590F4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9DAAD38A2C227C18001590F4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		9DAAD38E2C227FFF001590F4 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9DAAD38F2C227FFF001590F4 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		9DAAD3902C227FFF001590F4 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9DAAD3912C227FFF001590F4 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		9DAAD3922C227FFF001590F4 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		9DAAD3932C227FFF001590F4 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		9DAAD3942C227FFF001590F4 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		9DAAD3952C227FFF001590F4 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		9DAAD3962C227FFF001590F4 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9DAAD3972C227FFF001590F4 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		9DAAD3A42C2281D8001590F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DAAD3A52C2287AF001590F4 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		9DC119702C1957ED00ECF58C /* Quackary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC119732C1957ED00ECF58C /* QuackaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackaryApp.swift; sourceTree = "<group>"; };
 		9DC119752C1957ED00ECF58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +77,16 @@
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
+		9DE706EF2C22AC8400A419E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9DE706F12C239D5C00A419E6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		9DE706F32C239E7D00A419E6 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		9DE706F52C239F7A00A419E6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
+		9DE706F92C242E9300A419E6 /* AchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
+		9DE706FD2C2510F800A419E6 /* GachaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GachaView.swift; sourceTree = "<group>"; };
+		9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen Shake.mp4"; sourceTree = "<group>"; };
+		9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen 1.mp4"; sourceTree = "<group>"; };
 		E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
 		E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
 		E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
@@ -42,6 +103,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DAAD38C2C227FD9001590F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DAAD3982C227FFF001590F4 /* Lato */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9DAAD3982C227FFF001590F4 /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */,
+				9DAAD38E2C227FFF001590F4 /* Lato-BlackItalic.ttf */,
+				9DAAD38F2C227FFF001590F4 /* Lato-Bold.ttf */,
+				9DAAD3902C227FFF001590F4 /* Lato-BoldItalic.ttf */,
+				9DAAD3912C227FFF001590F4 /* Lato-Italic.ttf */,
+				9DAAD3922C227FFF001590F4 /* Lato-Light.ttf */,
+				9DAAD3932C227FFF001590F4 /* Lato-LightItalic.ttf */,
+				9DAAD3942C227FFF001590F4 /* Lato-Regular.ttf */,
+				9DAAD3952C227FFF001590F4 /* Lato-Thin.ttf */,
+				9DAAD3962C227FFF001590F4 /* Lato-ThinItalic.ttf */,
+				9DAAD3972C227FFF001590F4 /* OFL.txt */,
+			);
+			path = Lato;
+			sourceTree = "<group>";
+		};
 		9DC119672C1957ED00ECF58C = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +148,15 @@
 		9DC119722C1957ED00ECF58C /* Quackary */ = {
 			isa = PBXGroup;
 			children = (
+				9DAAD3A42C2281D8001590F4 /* Info.plist */,
+				9DAAD38C2C227FD9001590F4 /* Fonts */,
 				E4DC6C252C1967D900DB851F /* Util */,
 				E4DC6C242C19675700DB851F /* ViewModel */,
 				E4DC6C232C19674F00DB851F /* View */,
 				E4DC6C222C19674500DB851F /* Model */,
 				9DC119732C1957ED00ECF58C /* QuackaryApp.swift */,
 				9DC119792C1957EE00ECF58C /* Assets.xcassets */,
+				9DE707012C2512D200A419E6 /* Videos */,
 				9DC1197B2C1957EE00ECF58C /* Preview Content */,
 			);
 			path = Quackary;
@@ -80,10 +170,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9DE707012C2512D200A419E6 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */,
+				9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		E4DC6C222C19674500DB851F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9DC119772C1957ED00ECF58C /* Item.swift */,
+				9DE706EF2C22AC8400A419E6 /* User.swift */,
+				9DE706F12C239D5C00A419E6 /* Place.swift */,
+				9DE706F32C239E7D00A419E6 /* Achievement.swift */,
+				9D870E692C255925002071FC /* Missions.swift */,
+				9DE706F52C239F7A00A419E6 /* Mission.swift */,
+				9D870E672C2558F6002071FC /* Achievements.swift */,
+				9D870E6B2C25594A002071FC /* Places.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +199,13 @@
 			children = (
 				9DC119752C1957ED00ECF58C /* ContentView.swift */,
 				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
+				9DAAD3A52C2287AF001590F4 /* FontView.swift */,
+				9DE706F92C242E9300A419E6 /* AchievementView.swift */,
+				9DE706FD2C2510F800A419E6 /* GachaView.swift */,
+				9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */,
+				9D870E652C252C1B002071FC /* LooperVideoView.swift */,
+				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
+				9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */,
+				9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -110,6 +224,8 @@
 			children = (
 				E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */,
 				E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */,
+				9DAAD3882C227B03001590F4 /* AudioManager.swift */,
+				9DAAD38A2C227C18001590F4 /* HapticManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -172,8 +288,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAAD39A2C227FFF001590F4 /* Lato-BlackItalic.ttf in Resources */,
+				9DAAD3A22C227FFF001590F4 /* Lato-ThinItalic.ttf in Resources */,
+				9DAAD39D2C227FFF001590F4 /* Lato-Italic.ttf in Resources */,
+				9DAAD39B2C227FFF001590F4 /* Lato-Bold.ttf in Resources */,
 				9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */,
+				9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */,
+				9DAAD3A12C227FFF001590F4 /* Lato-Thin.ttf in Resources */,
+				9DAAD39C2C227FFF001590F4 /* Lato-BoldItalic.ttf in Resources */,
+				9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */,
+				9DAAD3A32C227FFF001590F4 /* OFL.txt in Resources */,
 				9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */,
+				9DAAD3A02C227FFF001590F4 /* Lato-Regular.ttf in Resources */,
+				9DAAD39F2C227FFF001590F4 /* Lato-LightItalic.ttf in Resources */,
+				9DAAD39E2C227FFF001590F4 /* Lato-Light.ttf in Resources */,
+				9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,13 +313,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D870E622C252BA8002071FC /* LoopingVideoViewController.swift in Sources */,
+				9D870E682C2558F6002071FC /* Achievements.swift in Sources */,
+				9D870E6A2C255925002071FC /* Missions.swift in Sources */,
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
+				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
+				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
 				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,
+				9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */,
 				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
+				9DE706FA2C242E9300A419E6 /* AchievementView.swift in Sources */,
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
+				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
+				9D870E662C252C1B002071FC /* LooperVideoView.swift in Sources */,
+				9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */,
 				E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */,
+				9D870E6C2C25594A002071FC /* Places.swift in Sources */,
+				9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */,
+				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
+				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
+				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
+				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
+				9DE706F82C242DAC00A419E6 /* AchievementViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,15 +470,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quackary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,15 +501,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quackary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
