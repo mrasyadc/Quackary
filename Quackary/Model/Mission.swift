@@ -25,7 +25,7 @@ final class Mission {
     var rewardXPositionInScreen: Float?
     var rewardYPositionInScreen: Float?
 
-    init(name: String, type: MissionType, place: Place? = nil, isHidden: Bool = true) {
+    init(name: String, type: MissionType, place: Place, isHidden: Bool = true, rewardImageName: String) {
         self.missionId = UUID()
         self.name = name
         self.place = place
@@ -36,7 +36,7 @@ final class Mission {
         self.doneTimestamp = nil
         self.photoName = nil
         self.writing = nil
-        self.rewardImageName = "nil"
+        self.rewardImageName = rewardImageName
         self.deadlineDate = nil
         self.rewardXPositionInScreen = nil
         self.rewardYPositionInScreen = nil
