@@ -1,5 +1,5 @@
 //
-//  Achievements.swift
+//  Achievement.swift
 //  Quackary
 //
 //  Created by Muhammad Rasyad Caesarardhi on 20/06/24.
@@ -26,4 +26,3 @@ final class Achievement {
         self.timestamp = nil
     }
 }
-
