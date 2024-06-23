@@ -12,8 +12,10 @@ import SwiftUI
 struct QuackaryApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
             Achievement.self,
+            Mission.self,
+            Place.self,
+            User.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,7 +28,7 @@ struct QuackaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            GachaView()
+            SwiftDataInsertion()
         }
         .modelContainer(sharedModelContainer)
     }
