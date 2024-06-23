@@ -10,9 +10,15 @@
 		9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1A2C282EAD003092E9 /* Story 1.mp4 */; };
 		9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1B2C282EAD003092E9 /* Home.mp4 */; };
 		9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1C2C282EAD003092E9 /* Story 2.mp4 */; };
-		9D870E622C252BA8002071FC /* LoopingVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */; };
+		9D531B212C283298003092E9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D531B202C283298003092E9 /* Router.swift */; };
+		9D531B232C2838A6003092E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D531B222C2838A6003092E9 /* HomeView.swift */; };
+		9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D531B242C2838D5003092E9 /* SplashScreenView.swift */; };
+		9D531B272C28391F003092E9 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D531B262C28391F003092E9 /* StoryView.swift */; };
+		9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B1B9D2C285871007FDE25 /* VideoPLayerViewModel.swift */; };
+		9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */; };
+		9D6B1BA22C2867D7007FDE25 /* Lato-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6B1BA12C2867D7007FDE25 /* Lato-ExtraBold.ttf */; };
 		9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */; };
-		9D870E662C252C1B002071FC /* LooperVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E652C252C1B002071FC /* LooperVideoView.swift */; };
+		9D870E662C252C1B002071FC /* LoopingVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */; };
 		9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E6E2C25653F002071FC /* SampleData+Achievement.swift */; };
 		9D870E752C25654F002071FC /* ModelContainerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E722C25654F002071FC /* ModelContainerPreview.swift */; };
 		9D870E762C25654F002071FC /* Preview+ModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E732C25654F002071FC /* Preview+ModelContainer.swift */; };
@@ -60,9 +66,15 @@
 		9D531B1A2C282EAD003092E9 /* Story 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 1.mp4"; sourceTree = "<group>"; };
 		9D531B1B2C282EAD003092E9 /* Home.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.mp4; sourceTree = "<group>"; };
 		9D531B1C2C282EAD003092E9 /* Story 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 2.mp4"; sourceTree = "<group>"; };
-		9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoViewController.swift; sourceTree = "<group>"; };
+		9D531B202C283298003092E9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9D531B222C2838A6003092E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9D531B242C2838D5003092E9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		9D531B262C28391F003092E9 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		9D6B1B9D2C285871007FDE25 /* VideoPLayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPLayerViewModel.swift; sourceTree = "<group>"; };
+		9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerContainerView.swift; sourceTree = "<group>"; };
+		9D6B1BA12C2867D7007FDE25 /* Lato-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ExtraBold.ttf"; sourceTree = "<group>"; };
 		9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUIView.swift; sourceTree = "<group>"; };
-		9D870E652C252C1B002071FC /* LooperVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooperVideoView.swift; sourceTree = "<group>"; };
+		9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoPlayerView.swift; sourceTree = "<group>"; };
 		9D870E6E2C25653F002071FC /* SampleData+Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SampleData+Achievement.swift"; sourceTree = "<group>"; };
 		9D870E722C25654F002071FC /* ModelContainerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelContainerPreview.swift; sourceTree = "<group>"; };
 		9D870E732C25654F002071FC /* Preview+ModelContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preview+ModelContainer.swift"; sourceTree = "<group>"; };
@@ -156,6 +168,7 @@
 				9DAAD38F2C227FFF001590F4 /* Lato-Bold.ttf */,
 				9DAAD3902C227FFF001590F4 /* Lato-BoldItalic.ttf */,
 				9DAAD3912C227FFF001590F4 /* Lato-Italic.ttf */,
+				9D6B1BA12C2867D7007FDE25 /* Lato-ExtraBold.ttf */,
 				9DAAD3922C227FFF001590F4 /* Lato-Light.ttf */,
 				9DAAD3932C227FFF001590F4 /* Lato-LightItalic.ttf */,
 				9DAAD3942C227FFF001590F4 /* Lato-Regular.ttf */,
@@ -229,6 +242,7 @@
 				9DE706F12C239D5C00A419E6 /* Place.swift */,
 				9DE706F32C239E7D00A419E6 /* Achievement.swift */,
 				9DE706F52C239F7A00A419E6 /* Mission.swift */,
+				9D531B202C283298003092E9 /* Router.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,14 +252,17 @@
 			children = (
 				9DC119752C1957ED00ECF58C /* ContentView.swift */,
 				9D870E7F2C279AF1002071FC /* MainView.swift */,
+				9D531B222C2838A6003092E9 /* HomeView.swift */,
+				9D531B242C2838D5003092E9 /* SplashScreenView.swift */,
+				9D531B262C28391F003092E9 /* StoryView.swift */,
 				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
 				9DAAD3A52C2287AF001590F4 /* FontView.swift */,
 				9DE706F92C242E9300A419E6 /* AchievementView.swift */,
 				9DE706FD2C2510F800A419E6 /* GachaView.swift */,
 				9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */,
-				9D870E652C252C1B002071FC /* LooperVideoView.swift */,
+				9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */,
+				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
 				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
-				9D870E612C252BA8002071FC /* LoopingVideoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +272,7 @@
 			children = (
 				E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */,
 				9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */,
+				9D6B1B9D2C285871007FDE25 /* VideoPLayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,6 +362,7 @@
 				9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */,
 				9DAAD39F2C227FFF001590F4 /* Lato-LightItalic.ttf in Resources */,
 				9DAAD39E2C227FFF001590F4 /* Lato-Light.ttf in Resources */,
+				9D6B1BA22C2867D7007FDE25 /* Lato-ExtraBold.ttf in Resources */,
 				9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */,
 				9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */,
 			);
@@ -356,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D870E622C252BA8002071FC /* LoopingVideoViewController.swift in Sources */,
+				9D531B272C28391F003092E9 /* StoryView.swift in Sources */,
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
@@ -372,12 +391,17 @@
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
+				9D531B232C2838A6003092E9 /* HomeView.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
-				9D870E662C252C1B002071FC /* LooperVideoView.swift in Sources */,
+				9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */,
+				9D870E662C252C1B002071FC /* LoopingVideoPlayerView.swift in Sources */,
 				9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */,
 				E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */,
 				9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */,
 				9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */,
+				9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */,
+				9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */,
+				9D531B212C283298003092E9 /* Router.swift in Sources */,
 				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
 				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
 				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
