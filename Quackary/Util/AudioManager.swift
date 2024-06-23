@@ -6,43 +6,35 @@
 //
 
 import AVFoundation
+import Foundation
 
-final class AudioManager {
-    private var audioFileName: String
-    private var audioFileType: String
-    private var audioPlayer: AVAudioPlayer
+class AudioManager: ObservableObject {
+    static let shared = AudioManager() // Singleton instance
+    private var audioPlayers: [AVAudioPlayer] = []
     
+    private init() {} // Private initializer to enforce singleton
     
-    init?(audioFileName: String, fileType: String) {
-        self.audioFileName = audioFileName
-        self.audioFileType = fileType
-        self.audioPlayer = AVAudioPlayer()
+    func playAudio(named audioName: String, fileType: String = "mp3", loop: Bool = false) {
+        guard let audioPath = Bundle.main.path(forResource: audioName, ofType: fileType) else {
+            print("Audio file \(audioName).\(fileType) not found")
+            return
         }
-
-    func playSound() {
-        DispatchQueue.global().async {
-            self._playSound(soundFileName: self.audioFileName, fileType: self.audioFileType)
+        let url = URL(fileURLWithPath: audioPath)
+        
+        do {
+            let audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer.numberOfLoops = loop ? -1 : 0
+            audioPlayer.play()
+            audioPlayers.append(audioPlayer)
+        } catch {
+            print("Error playing audio: \(error.localizedDescription)")
         }
-                    
     }
     
-    func _playSound(soundFileName: String, fileType: String) {
-        // Get the URL of the sound file
-        if let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: fileType) {
-            do {
-                // Initialize the audio player with the sound file URL
-                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-                // Prepare the audio player for playback
-                audioPlayer.prepareToPlay()
-                // Play the sound
-                audioPlayer.play()
-            } catch {
-                // Handle the error if the audio player could not be initialized
-                print("Error: Could not initialize AVAudioPlayer - \(error.localizedDescription)")
-            }
-        } else {
-            // Handle the error if the sound file could not be found
-            print("Error: Sound file not found")
+    func stopAllAudio() {
+        for player in audioPlayers {
+            player.stop()
         }
+        audioPlayers.removeAll()
     }
 }
