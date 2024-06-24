@@ -44,6 +44,9 @@ struct GachaView: View {
                 secondPlayer?.play()
                 secondPlayer?.isMuted = true
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                Router.shared.path.removeAll()
+            }
         }
     }
 }
