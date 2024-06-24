@@ -46,7 +46,9 @@ struct MainView: View {
             .navigationDestination(for: Router.Destination.self) { destination in
                 switch destination {
                 case .Story:
-                    StoryView()
+                    StoryFirstView()
+                case .SecondStory:
+                    StorySecondView()
                 case .Home:
                     HomeView()
                 case .SplashScreen:
