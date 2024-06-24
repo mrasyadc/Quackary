@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */; };
 		9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1A2C282EAD003092E9 /* Story 1.mp4 */; };
 		9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1B2C282EAD003092E9 /* Home.mp4 */; };
 		9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1C2C282EAD003092E9 /* Story 2.mp4 */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceView.swift; sourceTree = "<group>"; };
 		9D531B1A2C282EAD003092E9 /* Story 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 1.mp4"; sourceTree = "<group>"; };
 		9D531B1B2C282EAD003092E9 /* Home.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.mp4; sourceTree = "<group>"; };
 		9D531B1C2C282EAD003092E9 /* Story 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 2.mp4"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */,
 				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
 				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
+				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
 				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
 				9D6B1BA42C2932AE007FDE25 /* StorySecondView.swift in Sources */,
+				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E802C279AF1002071FC /* MainView.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
 				9D870E752C25654F002071FC /* ModelContainerPreview.swift in Sources */,
