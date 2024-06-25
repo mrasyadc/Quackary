@@ -15,11 +15,14 @@ struct StorySecondView: View {
             VStack {
                 Spacer()
                 Image("Story 2 Text")
-                    .onTapGesture {
-                        Router.shared.path.append(.OnBoarding)
-                    }
+                    .highPriorityGesture(
+                        TapGesture()
+                            .onEnded { _ in
+                                Router.shared.path.append(.World)
+                            }
+                    )
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

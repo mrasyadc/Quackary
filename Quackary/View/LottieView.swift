@@ -5,44 +5,70 @@
 //  Created by Bunga Prameswari on 24/06/24.
 //
 
-import Foundation
 import Lottie
 import SwiftUI
-import UIKit
-
-
-//extension AnimationV
-
 
 struct LottieView: UIViewRepresentable {
     var name: String
-    var loopMode: LottieLoopMode = .playOnce
-    var animationView = LottieAnimationView()
+    var loopMode: LottieLoopMode = .loop
 
-    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
+    class Coordinator: NSObject {
+        var parent: LottieView
+        var animationView: LottieAnimationView?
 
-        let view = UIView(frame: .zero)
+        init(parent: LottieView) {
+            self.parent = parent
+            super.init()
+        }
 
-        animationView.animation = LottieAnimation.named(name)
+        func playAnimation() {
+            // Perform animation playback on a background thread
+            DispatchQueue.global(qos: .userInitiated).async {
+                // Ensure that the UI updates are performed on the main thread
+                DispatchQueue.main.async {
+                    self.animationView?.play()
+                }
+            }
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(parent: self)
+    }
+
+    func makeUIView(context: Context) -> UIView {
+        let view = PassthroughView()
+
+        let animationView = LottieAnimationView(name: name)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = loopMode
-        animationView.play()
-        animationView.translatesAutoresizingMaskIntoConstraints = false
+        animationView.animationSpeed = 1.0
+        animationView.isUserInteractionEnabled = false // Disable user interaction
+        context.coordinator.animationView = animationView
 
+        animationView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(animationView)
 
         NSLayoutConstraint.activate([
-
-            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
-
-            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            animationView.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
+
         return view
     }
 
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) {}
-
+    func updateUIView(_ uiView: UIView, context: Context) {
+        context.coordinator.playAnimation()
+    }
 }
+
+// Custom UIView that passes through touches
+class PassthroughView: UIView {
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        return false
+    }
+}
+
 #Preview {
     LottieView(name: "Blue Duck Adult.json")
 }

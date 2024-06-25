@@ -28,10 +28,13 @@ struct HomeView: View {
                 .background(.yellowNormal)
                 .cornerRadius(12)
                 Spacer().frame(height: 30)
-            }.onTapGesture {
-                Router.shared.path.append(.Story)
-            }
-        }
+            }.highPriorityGesture(
+                TapGesture()
+                    .onEnded { _ in
+                        Router.shared.path.append(.Story)
+                    }
+            )
+        }.navigationBarBackButtonHidden()
     }
 }
 

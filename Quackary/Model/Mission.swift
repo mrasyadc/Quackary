@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Mission {
+final class Mission: Identifiable {
     var missionId: UUID
     var name: String
     var place: Place?
@@ -54,6 +54,10 @@ final class Mission {
         isDone = true
         doneTimestamp = Date()
         getPositionForNewReward()
+    }
+
+    func setMissionStateAfterGacha() {
+        isPlaceHidden = false
     }
 }
 

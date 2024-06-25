@@ -31,10 +31,12 @@
 		01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */; };
 		01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681F2C29CB3D00A498B0 /* CameraView.swift */; };
 		01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */; };
+		586259EF2C288D0400B2DE8B /* RewardsClaimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */; };
 		01FD144F2C2A788600D65ECD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144E2C2A788600D65ECD /* CardView.swift */; };
 		01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14502C2A9DBD00D65ECD /* BlueCard.swift */; };
 		01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14522C2A9DCD00D65ECD /* YellowCard.swift */; };
 		922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */; };
+		9D00139C2C2A742E006F4D87 /* WorldUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */; };
 		9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1A2C282EAD003092E9 /* Story 1.mp4 */; };
 		9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1B2C282EAD003092E9 /* Home.mp4 */; };
 		9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1C2C282EAD003092E9 /* Story 2.mp4 */; };
@@ -115,10 +117,12 @@
 		01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCameraView.swift; sourceTree = "<group>"; };
 		01E5681F2C29CB3D00A498B0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCapturedPhotoView.swift; sourceTree = "<group>"; };
+		586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsClaimView.swift; sourceTree = "<group>"; };
 		01FD144E2C2A788600D65ECD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		01FD14502C2A9DBD00D65ECD /* BlueCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCard.swift; sourceTree = "<group>"; };
 		01FD14522C2A9DCD00D65ECD /* YellowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCard.swift; sourceTree = "<group>"; };
 		922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceView.swift; sourceTree = "<group>"; };
+		9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUpdatedView.swift; sourceTree = "<group>"; };
 		9D531B1A2C282EAD003092E9 /* Story 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 1.mp4"; sourceTree = "<group>"; };
 		9D531B1B2C282EAD003092E9 /* Home.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.mp4; sourceTree = "<group>"; };
 		9D531B1C2C282EAD003092E9 /* Story 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 2.mp4"; sourceTree = "<group>"; };
@@ -365,9 +369,11 @@
 				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
 				01B5CDE02C29B541003E30EA /* WorldView.swift */,
 				01E5681B2C29C3B300A498B0 /* LottieView.swift */,
+				9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */,
 				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
 				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
 				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
+				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
 				01FD144E2C2A788600D65ECD /* CardView.swift */,
 				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
 				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
@@ -522,6 +528,7 @@
 				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,
 				9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */,
 				9D870E762C25654F002071FC /* Preview+ModelContainer.swift in Sources */,
+				9D00139C2C2A742E006F4D87 /* WorldUpdatedView.swift in Sources */,
 				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
 				9DE706FA2C242E9300A419E6 /* AchievementView.swift in Sources */,
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
@@ -533,6 +540,7 @@
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
 				9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */,
 				9D870E662C252C1B002071FC /* LoopingVideoPlayerView.swift in Sources */,
+				586259EF2C288D0400B2DE8B /* RewardsClaimView.swift in Sources */,
 				9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */,
 				E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */,
 				01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */,
@@ -686,7 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -695,7 +703,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -726,7 +734,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

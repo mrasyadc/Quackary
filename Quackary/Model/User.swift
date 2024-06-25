@@ -61,10 +61,10 @@ final class User {
 
     private func getSurpriseSetFromPreferenceSetSubstractRestrictSet(_ PreferencesToSubstract: Set<PreferenceType>, _ RestrictForSubtractTo: Set<RestrictType>) -> Set<PreferenceType> {
         // Convert RestrictType set to PreferenceType set
-        var mappedRestrictSet = Set(restricts.compactMap { mapToPreferenceType(restrict: $0) })
+        let mappedRestrictSet = Set(restricts.compactMap { mapToPreferenceType(restrict: $0) })
 
         // Perform the subtraction
-        var resultSet = preferences.subtracting(mappedRestrictSet)
+        let resultSet = preferences.subtracting(mappedRestrictSet)
 
         return resultSet
     }
