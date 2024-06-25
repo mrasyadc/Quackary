@@ -41,6 +41,20 @@ struct MainView: View {
                     Text("Go To Gacha")
                 }
             }
+            VStack {
+                Button {
+                    Router.shared.path.append(.World)
+                } label: {
+                    Text("Go To World")
+                }
+            }
+            VStack {
+                Button {
+                    Router.shared.path.append(.CheckIn)
+                } label: {
+                    Text("Go To Check In")
+                }
+            }
 
             .toolbar(.hidden)
             .navigationDestination(for: Router.Destination.self) { destination in
@@ -60,7 +74,9 @@ struct MainView: View {
                 case .Gacha:
                     GachaView()
                 case .CheckIn:
-                    HomeView()
+                    CheckInCameraView()
+                case .CheckInCapturedPhoto:
+                    CheckInCapturedPhotoView()
                 case .GoodReward:
                     HomeView()
                 case .BadReward:
@@ -71,6 +87,9 @@ struct MainView: View {
                     HomeView()
                 case .PlaceDetail:
                     HomeView()
+                case .World:
+                    WorldView()
+               
                 }
             }
         }

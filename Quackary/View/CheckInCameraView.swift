@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct CheckInView: View {
+struct CheckInCameraView: View {
     var body: some View {
         ZStack {
             Color(.blueBlackNormal)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            //blm kelar ya temen2
             
             VStack {
                 ZStack {
@@ -43,7 +45,10 @@ struct CheckInView: View {
                         .foregroundColor(.white)
                         .offset(x: 0, y: 0)
                 }
-                .frame(width: 80, height: 80);
+                .frame(width: 80, height: 80)
+                .onTapGesture {
+                    Router.shared.path.append(.CheckInCapturedPhoto)
+                }
                 
             }
             .padding(.horizontal, 20)
@@ -52,5 +57,5 @@ struct CheckInView: View {
 }
 
 #Preview {
-    CheckInView()
+    CheckInCameraView()
 }
