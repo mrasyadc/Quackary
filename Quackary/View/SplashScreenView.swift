@@ -15,8 +15,10 @@ struct SplashScreenView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
-        }.onTapGesture {
-            Router.shared.path.append(.Home)
+        }.onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                Router.shared.path.append(.Home)
+            }
         }
     }
 }
