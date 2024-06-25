@@ -511,6 +511,7 @@
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
 				9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */,
+				9D2267BA2C2A6D2500F3005C /* WorldView.swift in Sources */,
 				9D870E782C278FAB002071FC /* SampleData+User.swift in Sources */,
 				9D870E7A2C27908D002071FC /* SampleData+Place.swift in Sources */,
 				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,

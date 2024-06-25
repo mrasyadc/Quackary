@@ -13,7 +13,13 @@ struct WorldView: View {
         ZStack {
             LoopingVideoPlayerView(videoURL: Bundle.main.url(forResource: "Main Page Background", withExtension: "mp4")!)
                 .edgesIgnoringSafeArea(.all)
-
+            VStack {
+                Spacer()
+                Image("ExploreAndEarn")
+                    .onTapGesture {
+                        Router.shared.path.append(.Gacha)
+                    }
+            }
             // pikirin statenya
             // jadi patternnya yaitu dari
             // "(warna)" "(state ducknya)"
