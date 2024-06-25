@@ -8,31 +8,17 @@
 import AVFoundation
 import SwiftUI
 
-struct WorldView: View {
+struct WorldUpdatedView: View {
     var body: some View {
         ZStack {
             LoopingVideoPlayerView(videoURL: Bundle.main.url(forResource: "Main Page Background", withExtension: "mp4")!)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                ZStack {
-                    Image("ExploreAndEarn")
-
-                    Button(action: { Router.shared.path.append(.Gacha) }) {
-                        Text("Reveal My Destination")
-                            .frame(maxWidth: .infinity)
-                            .font(
-                                Font.custom("Lato", size: 16)
-                                    .weight(.heavy)
-                            )
-                            .foregroundColor(Color(red: 0.04, green: 0.09, blue: 0.16))
-                            .padding(.horizontal, 18)
-                            .padding(.vertical, 12)
-                            .background(Color(red: 1, green: 0.75, blue: 0.41))
-                            .cornerRadius(12)
+                Image("ExploreAndEarn")
+                    .onTapGesture {
+                        Router.shared.path.append(.Gacha)
                     }
-                }
-
             }.ignoresSafeArea()
             // pikirin statenya
             // jadi patternnya yaitu dari
@@ -58,15 +44,15 @@ struct WorldView: View {
             // tanya warna skrg apa && state skrg apa
             // arahin ke array selanjutnya
 
-            LottieView(name: "Yellow Egg.json", loopMode: .loop)
+            LottieView(name: "Yellow Duck Adult.json", loopMode: .loop)
 //
-//            LottieView(name: "Blue Duck Child.json", loopMode: .loop)
+            LottieView(name: "Blue Duck Child.json", loopMode: .loop)
 //
-//            LottieView(name: "Tube.json", loopMode: .loop)
+            LottieView(name: "Tube.json", loopMode: .loop)
         }.navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
-    WorldView()
+    WorldUpdatedView()
 }
