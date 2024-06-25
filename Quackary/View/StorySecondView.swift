@@ -16,10 +16,14 @@ struct StorySecondView: View {
                 Spacer()
                 Image("Story 2 Text")
                     .onTapGesture {
-                        Router.shared.path.append(.OnBoarding)
+//                        TODO: Harusnya ke onboarding
+//                        Router.shared.path.append(.OnBoarding)
+
+//                        bypass ke WorldPage (Main Page)
+                        Router.shared.path.append(.World)
                     }
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

@@ -11,9 +11,9 @@ struct CheckInCameraView: View {
     var body: some View {
         ZStack {
             Color(.blueBlackNormal)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/ .all/*@END_MENU_TOKEN@*/)
             
-            //blm kelar ya temen2
+            // blm kelar ya temen2
             
             VStack {
                 ZStack {
@@ -31,7 +31,7 @@ struct CheckInCameraView: View {
                     .cornerRadius(20)
                     .padding(.bottom, 58)
                 
-                ZStack() {
+                ZStack {
                     Ellipse()
                         .foregroundColor(.clear)
                         .frame(width: 85, height: 85)
@@ -49,10 +49,9 @@ struct CheckInCameraView: View {
                 .onTapGesture {
                     Router.shared.path.append(.CheckInCapturedPhoto)
                 }
-                
             }
             .padding(.horizontal, 20)
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

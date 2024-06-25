@@ -31,7 +31,7 @@ struct HomeView: View {
             }.onTapGesture {
                 Router.shared.path.append(.Story)
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

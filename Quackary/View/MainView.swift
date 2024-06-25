@@ -55,7 +55,7 @@ struct MainView: View {
                     Text("Go To Check In")
                 }
             }
-          VStack {
+            VStack {
                 Button {
                     Router.shared.path.append(.Achievement)
                 } label: {
@@ -92,16 +92,16 @@ struct MainView: View {
                     HomeView()
                 case .History:
                     HomeView()
-                case .PlaceDetail:
-                    HomeView()
-
+                case .DetailPlace:
+                    DetailPlaceView()
                 case .World:
                     WorldView()
-               
-
                 case .Achievement:
                     AchievementView()
-
+                case .Reward:
+                    RewardsClaimView()
+                case .WorldViewUpdated:
+                    WorldUpdatedView()
                 }
             }
         }
