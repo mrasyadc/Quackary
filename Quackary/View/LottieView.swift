@@ -37,11 +37,13 @@ struct LottieView: UIViewRepresentable {
     }
 
     func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: .zero)
+        let view = PassthroughView()
 
         let animationView = LottieAnimationView(name: name)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = loopMode
+        animationView.animationSpeed = 1.0
+        animationView.isUserInteractionEnabled = false // Disable user interaction
         context.coordinator.animationView = animationView
 
         animationView.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +59,13 @@ struct LottieView: UIViewRepresentable {
 
     func updateUIView(_ uiView: UIView, context: Context) {
         context.coordinator.playAnimation()
+    }
+}
+
+// Custom UIView that passes through touches
+class PassthroughView: UIView {
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        return false
     }
 }
 
