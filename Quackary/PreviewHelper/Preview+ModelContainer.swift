@@ -19,10 +19,10 @@ extension ModelContainer {
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
         Task { @MainActor in
-            Achievement.insertSampleData(modelContext: container.mainContext)
-            User.insertSampleData(modelContext: container.mainContext)
-            Place.insertSampleData(modelContext: container.mainContext)
-            Mission.insertSampleData(modelContext: container.mainContext)
+            Achievement.reloadSampleData(modelContext: container.mainContext)
+            User.reloadSampleData(modelContext: container.mainContext)
+            Place.reloadSampleData(modelContext: container.mainContext)
+            Mission.reloadSampleData(modelContext: container.mainContext)
         }
         return container
     }
