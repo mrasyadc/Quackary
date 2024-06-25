@@ -41,6 +41,13 @@ struct MainView: View {
                     Text("Go To Gacha")
                 }
             }
+            VStack {
+                Button {
+                    Router.shared.path.append(.Achievement)
+                } label: {
+                    Text("Achievement")
+                }
+            }
 
             .toolbar(.hidden)
             .navigationDestination(for: Router.Destination.self) { destination in
@@ -71,6 +78,8 @@ struct MainView: View {
                     HomeView()
                 case .PlaceDetail:
                     HomeView()
+                case .Achievement:
+                    AchievementView()
                 }
             }
         }
