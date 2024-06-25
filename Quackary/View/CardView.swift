@@ -20,6 +20,7 @@ struct CardView: View {
                     .frame(width: 96, height: 96)
                     .cornerRadius(10)
                     .padding(.trailing, 2)
+                    .aspectRatio(contentMode: .fit)
                 
                 VStack(alignment: .leading) {
                     Text("Butler's Steak")
@@ -56,5 +57,8 @@ struct CardView: View {
             .padding(.horizontal, 6)
         }
         .shadow(color: Color(red: 0.65, green: 0.65, blue: 0.65).opacity(0.25), radius: 4.05, x: 0, y: 0)
+        .onTapGesture {
+            Router.shared.path.append(.DetailPlace)
+        }
     }
 }

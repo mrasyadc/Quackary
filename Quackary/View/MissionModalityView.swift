@@ -1,5 +1,5 @@
 //
-//  TestView.swift
+//  ModalityView.swift
 //  Quackary
 //
 //  Created by Bunga Prameswari on 25/06/24.
@@ -7,16 +7,52 @@
 
 import SwiftUI
 
-struct TestView: View {
+struct MissionModalityView: View {
+    @State private var offset: CGFloat = 0
+    @State private var isExpanded: Bool = false
+    
+    var body: some View {
+        VStack {
+            Spacer()
+            ModalityContent()
+                .background(Color.white)
+                .cornerRadius(32)
+                .shadow(radius: 10)
+                .offset(y: isExpanded ? 0 : 518)
+                .animation(.spring())
+                .gesture(
+                    DragGesture()
+                        .onChanged { gesture in
+                            self.offset = gesture.translation.height
+                        }
+                        .onEnded { gesture in
+                            if gesture.translation.height > 50 {
+                                withAnimation {
+                                    self.isExpanded = false
+                                }
+                            } else if gesture.translation.height < -50 {
+                                withAnimation {
+                                    self.isExpanded = true
+                                }
+                            }
+                            self.offset = 0
+                        }
+                )
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct ModalityContent: View {
     var body: some View {
         ZStack {
-            Color.whiteBlueLight
-                .edgesIgnoringSafeArea(.all)
+            Image("Modality")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 15)
             
             VStack {
-                Image("Resize Indicator")
-                    .padding(.bottom, 15)
-        
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Places to visit this week")
@@ -30,17 +66,15 @@ struct TestView: View {
                     
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(.redLightHover)
+                            .fill(Color.redLightHover)
                             .frame(minWidth: 0, maxWidth: .infinity)
-                        Text("7 days left")
+                        Text("6 days left")
                             .font(.custom("Lato-ExtraBold", size: 13))
                             .foregroundColor(.redNormal)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 2.5)
                     }
                     .fixedSize()
-                    
-                    
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
@@ -50,7 +84,7 @@ struct TestView: View {
                         Image("SectionBlueBackground")
                         Text("Top treats for your taste")
                             .font(.custom("Lato-ExtraBold", size: 16))
-                            .foregroundStyle(.blueDark)
+                            .foregroundColor(.blueDark)
                             .padding(.leading, 15)
                     }
                     BlueCard()
@@ -63,7 +97,7 @@ struct TestView: View {
                         Image("SectionYellowBackground")
                         Text("Let’s broaden your discovery")
                             .font(.custom("Lato-ExtraBold", size: 16))
-                            .foregroundStyle(.blueDark)
+                            .foregroundColor(.blueDark)
                             .padding(.leading, 15)
                     }
                     YellowCard()
@@ -74,5 +108,5 @@ struct TestView: View {
 }
 
 #Preview {
-    TestView()
+    MissionModalityView()
 }
