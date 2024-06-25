@@ -9,7 +9,9 @@ import Foundation
 import SwiftData
 
 extension Mission {
+    static let missionSample = Mission(name: "Mission 1", type: .Regular, place: Place.examplePlace1, isHidden: true, rewardImageName: "Reward Image URL")
     static func insertSampleData(modelContext: ModelContext) {
+        modelContext.insert(missionSample)
         modelContext.insert(Mission(name: "Mission 1", type: .Regular, place: Place.examplePlace1, isHidden: true, rewardImageName: "Reward Image URL"))
         modelContext.insert(Mission(name: "Mission 2", type: .LimitedTime, place: Place.examplePlace1, isHidden: true, rewardImageName: "Reward Image URL"))
         modelContext.insert(Mission(name: "Mission 3", type: .Regular, place: Place.examplePlace1, isHidden: true, rewardImageName: "Reward Image URL"))

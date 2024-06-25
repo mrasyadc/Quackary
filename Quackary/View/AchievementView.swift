@@ -17,7 +17,7 @@ struct AchievementView: View {
         Text(String(achievement.count))
         List(achievement) { achie in
             Text(achie.name)
-            Text("Is Done: \(achie.isDone)")
+            Text("Is Done: \(String(achie.isDone))")
         }
     }
 }

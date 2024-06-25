@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
+		01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5CDE02C29B541003E30EA /* WorldView.swift */; };
+		01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */; };
+		01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F72C29C10000A498B0 /* Blue Duck Adult.json */; };
+		01E5680A2C29C10000A498B0 /* Blue Duck Child.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F82C29C10000A498B0 /* Blue Duck Child.json */; };
+		01E5680B2C29C10000A498B0 /* Blue Duck Teen.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F92C29C10000A498B0 /* Blue Duck Teen.json */; };
+		01E5680C2C29C10000A498B0 /* Blue Egg.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FA2C29C10000A498B0 /* Blue Egg.json */; };
+		01E5680D2C29C10000A498B0 /* Yellow Duck Adult.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FB2C29C10000A498B0 /* Yellow Duck Adult.json */; };
+		01E5680E2C29C10000A498B0 /* Yellow Duck Child.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FC2C29C10000A498B0 /* Yellow Duck Child.json */; };
+		01E5680F2C29C10000A498B0 /* Yellow Duck Teen.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FD2C29C10000A498B0 /* Yellow Duck Teen.json */; };
+		01E568102C29C10000A498B0 /* Yellow Egg.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FE2C29C10000A498B0 /* Yellow Egg.json */; };
+		01E568112C29C10000A498B0 /* Air Balloon.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568002C29C10000A498B0 /* Air Balloon.json */; };
+		01E568122C29C10000A498B0 /* Ball.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568012C29C10000A498B0 /* Ball.json */; };
+		01E568132C29C10000A498B0 /* Boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568022C29C10000A498B0 /* Boat.json */; };
+		01E568142C29C10000A498B0 /* Hat.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568032C29C10000A498B0 /* Hat.json */; };
+		01E568152C29C10000A498B0 /* Lighthouse.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568042C29C10000A498B0 /* Lighthouse.json */; };
+		01E568162C29C10000A498B0 /* Parasol.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568052C29C10000A498B0 /* Parasol.json */; };
+		01E568172C29C10000A498B0 /* Tube.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568062C29C10000A498B0 /* Tube.json */; };
+		01E5681A2C29C39800A498B0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 01E568192C29C39800A498B0 /* Lottie */; };
+		01E5681C2C29C3B300A498B0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681B2C29C3B300A498B0 /* LottieView.swift */; };
+		01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */; };
+		01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681F2C29CB3D00A498B0 /* CameraView.swift */; };
+		01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */; };
+
+
+		586259EF2C288D0400B2DE8B /* RewardsClaimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */; };
+
+		922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */; };
 		9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1A2C282EAD003092E9 /* Story 1.mp4 */; };
 		9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1B2C282EAD003092E9 /* Home.mp4 */; };
 		9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1C2C282EAD003092E9 /* Story 2.mp4 */; };
@@ -64,6 +92,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B5CDE02C29B541003E30EA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Main Page Background.mp4"; sourceTree = "<group>"; };
+		01E567F72C29C10000A498B0 /* Blue Duck Adult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Adult.json"; sourceTree = "<group>"; };
+		01E567F82C29C10000A498B0 /* Blue Duck Child.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Child.json"; sourceTree = "<group>"; };
+		01E567F92C29C10000A498B0 /* Blue Duck Teen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Teen.json"; sourceTree = "<group>"; };
+		01E567FA2C29C10000A498B0 /* Blue Egg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Egg.json"; sourceTree = "<group>"; };
+		01E567FB2C29C10000A498B0 /* Yellow Duck Adult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Duck Adult.json"; sourceTree = "<group>"; };
+		01E567FC2C29C10000A498B0 /* Yellow Duck Child.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Duck Child.json"; sourceTree = "<group>"; };
+		01E567FD2C29C10000A498B0 /* Yellow Duck Teen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Duck Teen.json"; sourceTree = "<group>"; };
+		01E567FE2C29C10000A498B0 /* Yellow Egg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Egg.json"; sourceTree = "<group>"; };
+		01E568002C29C10000A498B0 /* Air Balloon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Air Balloon.json"; sourceTree = "<group>"; };
+		01E568012C29C10000A498B0 /* Ball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ball.json; sourceTree = "<group>"; };
+		01E568022C29C10000A498B0 /* Boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat.json; sourceTree = "<group>"; };
+		01E568032C29C10000A498B0 /* Hat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hat.json; sourceTree = "<group>"; };
+		01E568042C29C10000A498B0 /* Lighthouse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lighthouse.json; sourceTree = "<group>"; };
+		01E568052C29C10000A498B0 /* Parasol.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Parasol.json; sourceTree = "<group>"; };
+		01E568062C29C10000A498B0 /* Tube.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tube.json; sourceTree = "<group>"; };
+		01E5681B2C29C3B300A498B0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCameraView.swift; sourceTree = "<group>"; };
+		01E5681F2C29CB3D00A498B0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCapturedPhotoView.swift; sourceTree = "<group>"; };
+
+		922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceView.swift; sourceTree = "<group>"; };
+		586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsClaimView.swift; sourceTree = "<group>"; };
 		9D531B1A2C282EAD003092E9 /* Story 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 1.mp4"; sourceTree = "<group>"; };
 		9D531B1B2C282EAD003092E9 /* Home.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.mp4; sourceTree = "<group>"; };
 		9D531B1C2C282EAD003092E9 /* Story 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 2.mp4"; sourceTree = "<group>"; };
@@ -127,12 +179,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E5681A2C29C39800A498B0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E567FF2C29C10000A498B0 /* Duck */ = {
+			isa = PBXGroup;
+			children = (
+				01E567F72C29C10000A498B0 /* Blue Duck Adult.json */,
+				01E567F82C29C10000A498B0 /* Blue Duck Child.json */,
+				01E567F92C29C10000A498B0 /* Blue Duck Teen.json */,
+				01E567FA2C29C10000A498B0 /* Blue Egg.json */,
+				01E567FB2C29C10000A498B0 /* Yellow Duck Adult.json */,
+				01E567FC2C29C10000A498B0 /* Yellow Duck Child.json */,
+				01E567FD2C29C10000A498B0 /* Yellow Duck Teen.json */,
+				01E567FE2C29C10000A498B0 /* Yellow Egg.json */,
+			);
+			path = Duck;
+			sourceTree = "<group>";
+		};
+		01E568072C29C10000A498B0 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				01E568002C29C10000A498B0 /* Air Balloon.json */,
+				01E568012C29C10000A498B0 /* Ball.json */,
+				01E568022C29C10000A498B0 /* Boat.json */,
+				01E568032C29C10000A498B0 /* Hat.json */,
+				01E568042C29C10000A498B0 /* Lighthouse.json */,
+				01E568052C29C10000A498B0 /* Parasol.json */,
+				01E568062C29C10000A498B0 /* Tube.json */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		01E568082C29C10000A498B0 /* LottieJson */ = {
+			isa = PBXGroup;
+			children = (
+				01E567FF2C29C10000A498B0 /* Duck */,
+				01E568072C29C10000A498B0 /* Object */,
+			);
+			path = LottieJson;
+			sourceTree = "<group>";
+		};
 		9D870E6F2C25653F002071FC /* SampleData */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +301,7 @@
 				9D870E6F2C25653F002071FC /* SampleData */,
 				9DC119732C1957ED00ECF58C /* QuackaryApp.swift */,
 				9DC119792C1957EE00ECF58C /* Assets.xcassets */,
+				01E568082C29C10000A498B0 /* LottieJson */,
 				9DE707012C2512D200A419E6 /* Videos */,
 				9DC1197B2C1957EE00ECF58C /* Preview Content */,
 			);
@@ -227,6 +319,7 @@
 		9DE707012C2512D200A419E6 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */,
 				9D531B1B2C282EAD003092E9 /* Home.mp4 */,
 				9D531B1A2C282EAD003092E9 /* Story 1.mp4 */,
 				9D531B1C2C282EAD003092E9 /* Story 2.mp4 */,
@@ -266,6 +359,17 @@
 				9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */,
 				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
 				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
+
+				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
+
+				01B5CDE02C29B541003E30EA /* WorldView.swift */,
+				01E5681B2C29C3B300A498B0 /* LottieView.swift */,
+				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
+				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
+				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
+
+				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,6 +411,9 @@
 			dependencies = (
 			);
 			name = Quackary;
+			packageProductDependencies = (
+				01E568192C29C39800A498B0 /* Lottie */,
+			);
 			productName = Quackary;
 			productReference = 9DC119702C1957ED00ECF58C /* Quackary.app */;
 			productType = "com.apple.product-type.application";
@@ -335,6 +442,9 @@
 				Base,
 			);
 			mainGroup = 9DC119672C1957ED00ECF58C;
+			packageReferences = (
+				01E568182C29C39800A498B0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 9DC119712C1957ED00ECF58C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,22 +459,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E5680C2C29C10000A498B0 /* Blue Egg.json in Resources */,
 				9DAAD39A2C227FFF001590F4 /* Lato-BlackItalic.ttf in Resources */,
 				9DAAD3A22C227FFF001590F4 /* Lato-ThinItalic.ttf in Resources */,
 				9DAAD39D2C227FFF001590F4 /* Lato-Italic.ttf in Resources */,
 				9DAAD39B2C227FFF001590F4 /* Lato-Bold.ttf in Resources */,
 				9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */,
+				01E5680F2C29C10000A498B0 /* Yellow Duck Teen.json in Resources */,
+				01E5680A2C29C10000A498B0 /* Blue Duck Child.json in Resources */,
 				9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */,
+				01E568152C29C10000A498B0 /* Lighthouse.json in Resources */,
+				01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */,
+				01E568132C29C10000A498B0 /* Boat.json in Resources */,
 				9DAAD3A12C227FFF001590F4 /* Lato-Thin.ttf in Resources */,
+				01E5680D2C29C10000A498B0 /* Yellow Duck Adult.json in Resources */,
+				01E568172C29C10000A498B0 /* Tube.json in Resources */,
+				01E568142C29C10000A498B0 /* Hat.json in Resources */,
 				9DAAD39C2C227FFF001590F4 /* Lato-BoldItalic.ttf in Resources */,
 				9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */,
+				01E568102C29C10000A498B0 /* Yellow Egg.json in Resources */,
 				9DAAD3A32C227FFF001590F4 /* OFL.txt in Resources */,
 				9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */,
 				9DAAD3A02C227FFF001590F4 /* Lato-Regular.ttf in Resources */,
+				01E568112C29C10000A498B0 /* Air Balloon.json in Resources */,
 				9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */,
+				01E5680E2C29C10000A498B0 /* Yellow Duck Child.json in Resources */,
+				01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */,
+				01E568122C29C10000A498B0 /* Ball.json in Resources */,
+				01E5680B2C29C10000A498B0 /* Blue Duck Teen.json in Resources */,
 				9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */,
 				9DAAD39F2C227FFF001590F4 /* Lato-LightItalic.ttf in Resources */,
 				9DAAD39E2C227FFF001590F4 /* Lato-Light.ttf in Resources */,
+				01E568162C29C10000A498B0 /* Parasol.json in Resources */,
 				9D6B1BA22C2867D7007FDE25 /* Lato-ExtraBold.ttf in Resources */,
 				9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */,
 				9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */,
@@ -379,6 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D531B272C28391F003092E9 /* StoryFirstView.swift in Sources */,
+				01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */,
+				01E5681C2C29C3B300A498B0 /* LottieView.swift in Sources */,
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
@@ -398,17 +526,23 @@
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
 				9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */,
 				9D870E662C252C1B002071FC /* LoopingVideoPlayerView.swift in Sources */,
+				586259EF2C288D0400B2DE8B /* RewardsClaimView.swift in Sources */,
 				9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */,
 				E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */,
+				01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */,
+				01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */,
 				9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */,
+				922C13592C288ECE006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */,
 				9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */,
 				9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */,
 				9D531B212C283298003092E9 /* Router.swift in Sources */,
 				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
 				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
+				01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */,
 				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
 				9D6B1BA42C2932AE007FDE25 /* StorySecondView.swift in Sources */,
+				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E802C279AF1002071FC /* MainView.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
 				9D870E752C25654F002071FC /* ModelContainerPreview.swift in Sources */,
@@ -546,7 +680,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+
+
+
+				DEVELOPMENT_TEAM = VR8745VKZG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -555,13 +692,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Quackary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bungaura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -577,7 +714,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+
+
+
+				DEVELOPMENT_TEAM = VR8745VKZG;
+
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -586,13 +727,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Quackary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bungaura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -622,6 +763,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01E568182C29C39800A498B0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01E568192C29C39800A498B0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01E568182C29C39800A498B0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DC119682C1957ED00ECF58C /* Project object */;
 }
