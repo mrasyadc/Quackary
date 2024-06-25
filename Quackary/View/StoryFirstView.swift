@@ -19,7 +19,7 @@ struct StoryFirstView: View {
                         Router.shared.path.append(.SecondStory)
                     }
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

@@ -16,17 +16,17 @@ struct RewardsClaimView: View {
             VStack(alignment: .center, spacing: 8) {
                 Spacer().frame(height: 100)
                 HStack(alignment: .center, spacing: 0) {
-                    Text("🍝 Issa Pasta Party!").font(.custom("Lato-Regular", size: 11))
+                    Text("🍝 Issa Pasta Party!").font(.custom("Lato-Regular", size: 11)).foregroundStyle(.blueNormal)
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 4)
                 .background(Color(red: 1, green: 0.98, blue: 0.94))
                 .cornerRadius(12)
-                
-                Text("Check In Success!").font(.custom("Lato-ExtraBold", size: 28))
+
+                Text("Check In Success!").font(.custom("Lato-ExtraBold", size: 28)).foregroundStyle(.blueDarker)
                 Text("You’ve earned a unique item to complete your island").font(.custom("Lato-Regular", size: 16))
                     .multilineTextAlignment(.center)
-                    .frame(width: 214, alignment: .center)
+                    .frame(width: 214, alignment: .center).foregroundStyle(.blueDarker)
                 Image("rewardItem-Umbrella")
                     .resizable()
                     .scaledToFill()
@@ -34,7 +34,7 @@ struct RewardsClaimView: View {
                 Spacer()
             }
             .padding(0)
-            
+
             VStack {
                 Spacer()
                 HStack(alignment: .center, spacing: 6) {
@@ -47,9 +47,9 @@ struct RewardsClaimView: View {
                 .cornerRadius(12)
                 Spacer().frame(height: 30)
             }.onTapGesture {
-//                Router.shared.path.append(.Story)
+                Router.shared.path.append(.WorldViewUpdated)
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
