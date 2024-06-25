@@ -19,7 +19,7 @@ struct SplashScreenView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 Router.shared.path.append(.Home)
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

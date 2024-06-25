@@ -21,7 +21,7 @@ struct GachaView: View {
     }) var missions: [Mission]
 
     var body: some View {
-        var _ = print(missions[0].isPlaceHidden)
+//        var _ = print(missions[0].isPlaceHidden)
         ZStack {
             if !isFirst {
                 if let player = secondPlayer {
@@ -43,7 +43,7 @@ struct GachaView: View {
                 player?.play()
                 player?.isMuted = true
             }
-        }.onTapGesture {
+        }.onShake {
             HapticUtils.runHapticThreeTimes()
             isFirst = false
             if let videoURL = Bundle.main.url(forResource: "Gacha Screen Shake", withExtension: "mp4") {
@@ -52,17 +52,16 @@ struct GachaView: View {
                 secondPlayer?.isMuted = true
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                Router.shared.path.removeAll()
+                Router.shared.path.append(.DetailPlace)
                 missions[0].setMissionStateAfterGacha()
                 missions[0].setMissionFinished()
 
                 print("==missionIsdone==")
                 print(missions[0].isDone)
-                print(missions[0].doneTimestamp)
                 print("==isPlaceHidden==")
                 print(missions[0].isPlaceHidden)
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 

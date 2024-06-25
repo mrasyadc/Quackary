@@ -23,7 +23,7 @@ struct StorySecondView: View {
                         Router.shared.path.append(.World)
                     }
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
