@@ -38,8 +38,8 @@ struct WorldView: View {
             //tanya warna skrg apa && state skrg apa
             //arahin ke array selanjutnya
             
-//            LottieView(name: "Yellow Duck Adult.json", loopMode: .loop)
-//            
+            LottieView(name: "Yellow Duck Adult.json", loopMode: .loop)
+            
 //            LottieView(name: "Blue Duck Child.json", loopMode: .loop)
 //            
 //            LottieView(name: "Tube.json", loopMode: .loop)

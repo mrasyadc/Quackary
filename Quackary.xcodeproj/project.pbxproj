@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0164300F2C2AAAF900643F5B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164300E2C2AAAF900643F5B /* TestView.swift */; };
+		016430112C2AC1BA00643F5B /* ModalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016430102C2AC1BA00643F5B /* ModalityView.swift */; };
 		01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5CDE02C29B541003E30EA /* WorldView.swift */; };
 		01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */; };
 		01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F72C29C10000A498B0 /* Blue Duck Adult.json */; };
@@ -29,6 +31,9 @@
 		01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */; };
 		01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681F2C29CB3D00A498B0 /* CameraView.swift */; };
 		01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */; };
+		01FD144F2C2A788600D65ECD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144E2C2A788600D65ECD /* CardView.swift */; };
+		01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14502C2A9DBD00D65ECD /* BlueCard.swift */; };
+		01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14522C2A9DCD00D65ECD /* YellowCard.swift */; };
 		922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */; };
 		9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1A2C282EAD003092E9 /* Story 1.mp4 */; };
 		9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D531B1B2C282EAD003092E9 /* Home.mp4 */; };
@@ -87,6 +92,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0164300E2C2AAAF900643F5B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		016430102C2AC1BA00643F5B /* ModalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalityView.swift; sourceTree = "<group>"; };
 		01B5CDE02C29B541003E30EA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 		01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Main Page Background.mp4"; sourceTree = "<group>"; };
 		01E567F72C29C10000A498B0 /* Blue Duck Adult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Adult.json"; sourceTree = "<group>"; };
@@ -108,6 +115,9 @@
 		01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCameraView.swift; sourceTree = "<group>"; };
 		01E5681F2C29CB3D00A498B0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCapturedPhotoView.swift; sourceTree = "<group>"; };
+		01FD144E2C2A788600D65ECD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		01FD14502C2A9DBD00D65ECD /* BlueCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCard.swift; sourceTree = "<group>"; };
+		01FD14522C2A9DCD00D65ECD /* YellowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCard.swift; sourceTree = "<group>"; };
 		922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceView.swift; sourceTree = "<group>"; };
 		9D531B1A2C282EAD003092E9 /* Story 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Story 1.mp4"; sourceTree = "<group>"; };
 		9D531B1B2C282EAD003092E9 /* Home.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.mp4; sourceTree = "<group>"; };
@@ -358,6 +368,11 @@
 				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
 				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
 				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
+				01FD144E2C2A788600D65ECD /* CardView.swift */,
+				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
+				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
+				0164300E2C2AAAF900643F5B /* TestView.swift */,
+				016430102C2AC1BA00643F5B /* ModalityView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,10 +507,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FD144F2C2A788600D65ECD /* CardView.swift in Sources */,
+				01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */,
 				9D531B272C28391F003092E9 /* StoryFirstView.swift in Sources */,
 				01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */,
 				01E5681C2C29C3B300A498B0 /* LottieView.swift in Sources */,
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
+				0164300F2C2AAAF900643F5B /* TestView.swift in Sources */,
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
 				9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */,
@@ -510,6 +528,7 @@
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
+				016430112C2AC1BA00643F5B /* ModalityView.swift in Sources */,
 				9D531B232C2838A6003092E9 /* HomeView.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
 				9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */,
@@ -528,6 +547,7 @@
 				01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */,
 				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
 				9D6B1BA42C2932AE007FDE25 /* StorySecondView.swift in Sources */,
+				01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */,
 				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E802C279AF1002071FC /* MainView.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
