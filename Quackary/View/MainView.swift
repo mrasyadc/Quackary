@@ -43,9 +43,23 @@ struct MainView: View {
             }
             VStack {
                 Button {
+                    Router.shared.path.append(.World)
+                } label: {
+                    Text("Go To World")
+                }
+            }
+            VStack {
+                Button {
+                    Router.shared.path.append(.CheckIn)
+                } label: {
+                    Text("Go To Check In")
+                }
+            }
+          VStack {
+                Button {
                     Router.shared.path.append(.Achievement)
                 } label: {
-                    Text("Achievement")
+                    Text("Go To Achievement")
                 }
             }
 
@@ -67,7 +81,9 @@ struct MainView: View {
                 case .Gacha:
                     GachaView()
                 case .CheckIn:
-                    HomeView()
+                    CheckInCameraView()
+                case .CheckInCapturedPhoto:
+                    CheckInCapturedPhotoView()
                 case .GoodReward:
                     HomeView()
                 case .BadReward:
@@ -78,8 +94,14 @@ struct MainView: View {
                     HomeView()
                 case .PlaceDetail:
                     HomeView()
+
+                case .World:
+                    WorldView()
+               
+
                 case .Achievement:
                     AchievementView()
+
                 }
             }
         }
