@@ -5,16 +5,20 @@
 //  Created by Evelyn Santoso on 24/06/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct DetailPlaceView: View {
-    private let samplePhoto = ["photo1",
-                               "photo2",
-                               "photo3"]
+    @Environment(\.modelContext) private var modelContext
 
+    @Query(filter: #Predicate<Place> { $0.name == "Restoran 1"
+    }) var places: [Place]
+    
     var body: some View {
+        var samplePhoto = places[0].imageNames
+        
         ZStack {
-            Color(.whiteBlueLight)
+            Color(.whiteBlueLight).ignoresSafeArea()
             VStack {
                 // BOTTOM BAR
                 HStack(alignment: .center) {
@@ -51,7 +55,7 @@ struct DetailPlaceView: View {
                         // VSTACK : PLACE (TOP OF VIEW)
                         VStack(alignment: .leading) {
                             // PLACE NAME (TOP)
-                            Text("B’Steak Grill & Pancake")
+                            Text(places[0].name)
                                 .font(Font.custom("Lato", size: 22)
                                     .weight(.heavy)
                                 )
@@ -66,7 +70,7 @@ struct DetailPlaceView: View {
                                 Image(systemName: "circle.fill")
                                     .resizable()
                                     .frame(width: 2.8125, height: 2.8125)
-                                    
+                                
                                 Text("$$$$")
                                     .font(Font.custom("Lato", size: 13))
                                     .foregroundColor(.black)
@@ -229,5 +233,7 @@ struct DetailPlaceView: View {
 }
 
 #Preview {
-    DetailPlaceView()
+    ModelContainerPreview(ModelContainer.sample) {
+        DetailPlaceView()
+    }
 }
