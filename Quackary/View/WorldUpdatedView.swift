@@ -15,10 +15,23 @@ struct WorldUpdatedView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                Image("ExploreAndEarn")
-                    .onTapGesture {
-                        Router.shared.path.append(.Gacha)
+                ZStack {
+                    Image("ExploreAndEarn")
+
+                    Button(action: { Router.shared.path.append(.Gacha) }) {
+                        Text("Reveal My Destination")
+                            .frame(maxWidth: .infinity)
+                            .font(
+                                Font.custom("Lato", size: 16)
+                                    .weight(.heavy)
+                            )
+                            .foregroundColor(Color(red: 0.04, green: 0.09, blue: 0.16))
+                            .padding(.horizontal, 18)
+                            .padding(.vertical, 12)
+                            .background(Color(red: 1, green: 0.75, blue: 0.41))
+                            .cornerRadius(12)
                     }
+                }
             }.ignoresSafeArea()
             // pikirin statenya
             // jadi patternnya yaitu dari

@@ -46,9 +46,12 @@ struct CheckInCameraView: View {
                         .offset(x: 0, y: 0)
                 }
                 .frame(width: 80, height: 80)
-                .onTapGesture {
-                    Router.shared.path.append(.CheckInCapturedPhoto)
-                }
+                .highPriorityGesture(
+                    TapGesture()
+                        .onEnded { _ in
+                            Router.shared.path.append(.CheckInCapturedPhoto)
+                        }
+                )
             }
             .padding(.horizontal, 20)
         }.navigationBarBackButtonHidden()

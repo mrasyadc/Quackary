@@ -58,7 +58,7 @@ struct WorldView: View {
             // tanya warna skrg apa && state skrg apa
             // arahin ke array selanjutnya
 
-            LottieView(name: "Yellow Egg.json", loopMode: .loop)
+//            LottieView(name: "Yellow Egg.json", loopMode: .loop)
 //
 //            LottieView(name: "Blue Duck Child.json", loopMode: .loop)
 //

@@ -5,8 +5,8 @@
 //  Created by Bunga Prameswari on 24/06/24.
 //
 
-import SwiftUI
 import AVFoundation
+import SwiftUI
 
 struct CameraView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
@@ -49,6 +49,8 @@ class CameraViewController: UIViewController {
             view.layer.addSublayer(videoPreviewLayer)
         }
 
-        captureSession.startRunning()
+        DispatchQueue.global().async {
+            captureSession.startRunning()
+        }
     }
 }
