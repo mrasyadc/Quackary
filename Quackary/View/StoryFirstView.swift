@@ -15,9 +15,12 @@ struct StoryFirstView: View {
             VStack {
                 Spacer()
                 Image("Story 1 Text")
-                    .onTapGesture {
-                        Router.shared.path.append(.SecondStory)
-                    }
+                    .highPriorityGesture(
+                        TapGesture()
+                            .onEnded { _ in
+                                Router.shared.path.append(.SecondStory)
+                            }
+                    )
             }
         }.navigationBarBackButtonHidden()
     }

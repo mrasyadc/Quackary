@@ -29,7 +29,7 @@ struct GachaView: View {
                         .ignoresSafeArea()
                 }
             }
-            if let player = player {
+            if player != nil {
                 Color.white
                     .ignoresSafeArea().opacity(isFirst ? 1.0 : 0.0).animation(.easeInOut(duration: 1.0), value: isFirst)
                 LoopingVideoPlayerView(videoURL: Bundle.main.url(forResource: "Gacha Screen 1", withExtension: "mp4")!)

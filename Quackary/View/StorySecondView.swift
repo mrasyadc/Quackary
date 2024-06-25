@@ -15,13 +15,12 @@ struct StorySecondView: View {
             VStack {
                 Spacer()
                 Image("Story 2 Text")
-                    .onTapGesture {
-//                        TODO: Harusnya ke onboarding
-//                        Router.shared.path.append(.OnBoarding)
-
-//                        bypass ke WorldPage (Main Page)
-                        Router.shared.path.append(.World)
-                    }
+                    .highPriorityGesture(
+                        TapGesture()
+                            .onEnded { _ in
+                                Router.shared.path.append(.World)
+                            }
+                    )
             }
         }.navigationBarBackButtonHidden()
     }
