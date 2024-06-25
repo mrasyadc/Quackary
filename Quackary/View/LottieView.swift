@@ -5,45 +5,61 @@
 //  Created by Bunga Prameswari on 24/06/24.
 //
 
-import Foundation
 import Lottie
 import SwiftUI
-import UIKit
-
-
-//extension AnimationV
-
 
 struct LottieView: UIViewRepresentable {
     var name: String
-    var loopMode: LottieLoopMode = .playOnce
-    var animationView = LottieAnimationView()
+    var loopMode: LottieLoopMode = .loop
 
-    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
+    class Coordinator: NSObject {
+        var parent: LottieView
+        var animationView: LottieAnimationView?
 
+        init(parent: LottieView) {
+            self.parent = parent
+            super.init()
+        }
+
+        func playAnimation() {
+            // Perform animation playback on a background thread
+            DispatchQueue.global(qos: .userInitiated).async {
+                // Ensure that the UI updates are performed on the main thread
+                DispatchQueue.main.async {
+                    self.animationView?.play()
+                }
+            }
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(parent: self)
+    }
+
+    func makeUIView(context: Context) -> UIView {
         let view = UIView(frame: .zero)
 
-        animationView.animation = LottieAnimation.named(name)
+        let animationView = LottieAnimationView(name: name)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = loopMode
-        
-        animationView.play()
-        animationView.translatesAutoresizingMaskIntoConstraints = false
+        context.coordinator.animationView = animationView
 
+        animationView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(animationView)
 
         NSLayoutConstraint.activate([
-
-            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
-
-            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            animationView.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
+
         return view
     }
 
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) {}
-
+    func updateUIView(_ uiView: UIView, context: Context) {
+        context.coordinator.playAnimation()
+    }
 }
+
 #Preview {
     LottieView(name: "Blue Duck Adult.json")
 }
