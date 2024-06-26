@@ -18,7 +18,7 @@ struct StorySecondView: View {
                     .highPriorityGesture(
                         TapGesture()
                             .onEnded { _ in
-                                Router.shared.path.append(.World)
+                                Router.shared.path.append(.RestrictFoodView)
                             }
                     )
             }
