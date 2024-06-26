@@ -11,7 +11,7 @@ struct SwiftDataInsertion: View {
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
-        MainView().task {
+        MainView().onAppear {
             Achievement.insertSampleData(modelContext: modelContext)
             User.insertSampleData(modelContext: modelContext)
             Place.insertSampleData(modelContext: modelContext)

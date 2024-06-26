@@ -10,7 +10,7 @@ import SwiftUI
 struct CardView: View {
     @Binding var imageName: String
     @Binding var rewardImageName: String
-    
+
     var body: some View {
         ZStack {
             Image(imageName)
@@ -21,14 +21,14 @@ struct CardView: View {
                     .cornerRadius(10)
                     .padding(.trailing, 2)
                     .aspectRatio(contentMode: .fit)
-                
+
                 VStack(alignment: .leading) {
                     Text("Butler's Steak")
                         .font(.custom("Lato-ExtraBold", size: 16))
                         .padding(.bottom, 4)
-                    
+
                     HStack {
-                        HStack(spacing: 0){
+                        HStack(spacing: 0) {
                             Text("$$")
                                 .foregroundStyle(.blueDark)
                             Text("$$")
@@ -39,7 +39,7 @@ struct CardView: View {
                     }
                     .font(.custom("Lato-Regular", size: 13))
                     .padding(.bottom, 2)
-                    
+
                     HStack {
                         Text("Open")
                             .foregroundStyle(.green)
