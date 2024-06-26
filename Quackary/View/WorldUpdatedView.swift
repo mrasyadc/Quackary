@@ -9,6 +9,7 @@ import AVFoundation
 import SwiftUI
 
 struct WorldUpdatedView: View {
+    @State private var scale: CGFloat = 0.8
     var body: some View {
         ZStack {
             LoopingVideoPlayerView(videoURL: Bundle.main.url(forResource: "Main Page Background", withExtension: "mp4")!)
@@ -38,10 +39,21 @@ struct WorldUpdatedView: View {
             // arahin ke array selanjutnya
 
             LottieView(name: "Yellow Duck Child.json", loopMode: .loop)
+                .scaleEffect(scale)
+                .onAppear {
+                    withAnimation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 4.0)) {
+                        scale = 1.0
+                    }
+                }
 //
 //            LottieView(name: "Blue Duck Child.json", loopMode: .loop)
 //
-            LottieView(name: "Tube.json", loopMode: .loop)
+//            LottieView(name: "Tube.json", loopMode: .loop).scaleEffect(scale)
+//                .onAppear {
+//                    withAnimation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 4.0)) {
+//                        scale = 1.0
+//                    }
+//                }
 
             ZStack {
                 VStack {
