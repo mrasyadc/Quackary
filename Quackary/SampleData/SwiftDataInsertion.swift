@@ -19,7 +19,3 @@ struct SwiftDataInsertion: View {
         }
     }
 }
-
-#Preview {
-    SwiftDataInsertion()
-}
