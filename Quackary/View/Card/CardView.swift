@@ -26,6 +26,7 @@ struct CardView: View {
                     Text("Butler's Steak")
                         .font(.custom("Lato-ExtraBold", size: 16))
                         .padding(.bottom, 4)
+                        .foregroundStyle(.blackNormal)
 
                     HStack {
                         HStack(spacing: 0) {
@@ -57,8 +58,5 @@ struct CardView: View {
             .padding(.horizontal, 6)
         }
         .shadow(color: Color(red: 0.65, green: 0.65, blue: 0.65).opacity(0.25), radius: 4.05, x: 0, y: 0)
-        .onTapGesture {
-            Router.shared.path.append(.DetailPlace)
-        }
     }
 }

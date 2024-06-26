@@ -14,7 +14,8 @@ extension ModelContainer {
             Achievement.self,
             Mission.self,
             Place.self,
-            User.self
+            User.self,
+            GlobalState.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -23,6 +24,7 @@ extension ModelContainer {
             User.reloadSampleData(modelContext: container.mainContext)
             Place.reloadSampleData(modelContext: container.mainContext)
             Mission.reloadSampleData(modelContext: container.mainContext)
+            GlobalState.reloadSampleData(modelContext: container.mainContext)
         }
         return container
     }

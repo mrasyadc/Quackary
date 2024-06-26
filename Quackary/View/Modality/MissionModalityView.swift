@@ -5,6 +5,7 @@
 //  Created by Bunga Prameswari on 25/06/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct MissionModalityView: View {
@@ -44,6 +45,8 @@ struct MissionModalityView: View {
 }
 
 struct ModalityContent: View {
+    @Environment(\.modelContext) private var modelContext
+    @State var viewModel = MissionModalityViewModel()
     var body: some View {
         ZStack {
             Image("Modality")
@@ -87,8 +90,16 @@ struct ModalityContent: View {
                             .foregroundColor(.blueDark)
                             .padding(.leading, 15)
                     }
-                    BlueCard()
-                    BlueCard()
+                    BlueCard().onTapGesture {
+                        viewModel.setBlueMission()
+                        viewModel.upgradeYellow()
+                        Router.shared.path.append(.DetailPlace)
+                    }
+                    BlueCard().onTapGesture {
+                        viewModel.setBlueMission()
+                        viewModel.upgradeYellow()
+                        Router.shared.path.append(.DetailPlace)
+                    }
                 }
                 .padding(.bottom, 20)
                 
@@ -100,13 +111,23 @@ struct ModalityContent: View {
                             .foregroundColor(.blueDark)
                             .padding(.leading, 15)
                     }
-                    YellowCard()
+                    YellowCard().onTapGesture {
+                        viewModel.setYellowMission()
+                        viewModel.addItem(item: .Parasol)
+                        Router.shared.path.append(.DetailPlace)
+                    }
                 }
             }
+        }.onAppear {
+            viewModel.modelContext = modelContext
+            viewModel.fetchUser()
+            viewModel.fetchGlobalState()
         }
     }
 }
 
 #Preview {
-    MissionModalityView()
+    ModelContainerPreview(ModelContainer.sample) {
+        MissionModalityView()
+    }
 }
