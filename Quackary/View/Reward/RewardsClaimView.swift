@@ -27,7 +27,7 @@ struct RewardsClaimView: View {
                 Text("You’ve earned a unique item to complete your island").font(.custom("Lato-Regular", size: 16))
                     .multilineTextAlignment(.center)
                     .frame(width: 214, alignment: .center).foregroundStyle(.blueDarker)
-                Image("rewardItem-Umbrella")
+                Image("Reward Umbrella")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 284, height: 284, alignment: .center)

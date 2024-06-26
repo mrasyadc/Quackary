@@ -1,19 +1,19 @@
 //
-//  FavoriteFoodView.swift
+//  RestrictFoodView.swift
 //  Quackary
 //
-//  Created by Romi Fadhurohman Nabil on 26/06/24.
+//  Created by Romi Fadhurohman Nabil on 25/06/24.
 //
 
 import SwiftUI
 import SwiftData
 
-enum PreferenceType: String, CaseIterable, Hashable, Codable, Equatable {
-    case Beef, Bento, Cheese, Chicken, Duck, Egg, Fish, FriesFood, Fruit, Lamb, Martabak, Meatball, Milk, Pasta, Pizza, PlantBased, Pork, Porridge, Ramen, Rea, Salad, Sandiwch, Satay, Soup, Steak, Sushi, Tempeh, Tofu, Vegetable, Yogurt
+enum RestrictType: String, CaseIterable, Hashable, Codable, Equatable {
+    case Alcohol, TreeNuts, Beef, Wheat, Shrimp, Fish, Gluten, Pork, Seafood, Milk, Soy, Peanuts, Eggs, Dairy, Sesame, Shellfish
 }
 
-struct FavoriteFoodView: View {
-    @State private var selectedFavorites: Set<PreferenceType> = []
+struct RestrictFoodView: View {
+    @State private var selectedRestrictions: Set<RestrictType> = []
     
     var body: some View {
         ZStack {
@@ -23,28 +23,24 @@ struct FavoriteFoodView: View {
                 HStack(spacing: 12) {
                     Rectangle()
                         .foregroundColor(.blueNormal)
-                        .frame(width: 107, height: 4)
-                        .cornerRadius(100)
-                    
-                    Rectangle()
-                        .foregroundColor(.blueNormal)
-                        .frame(width: 107, height: 4)
+                        .frame(maxWidth: .infinity, maxHeight: 4)
                         .cornerRadius(100)
                     
                     Rectangle()
                         .foregroundColor(.darkGreenLight)
-                        .frame(width: 107, height: 4)
+                        .frame(maxWidth: .infinity, maxHeight: 4)
                         .cornerRadius(100)
                 }
                 .padding(.top, 54)
-                .padding(.vertical, 20)
+                .padding(20)
+                .frame(maxWidth: .infinity)
                 
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
-                        Text("Your Ultimate Food Favorites")
+                        Text("Your Food Restrictions")
                             .font(Font.custom("Lato-ExtraBold", size: 22))
                             .foregroundColor(.blueDarker)
-                        Text("Tell us at least 3 food you can't live without!")
+                        Text("Tell us what’s a no for you!")
                             .font(Font.custom("Lato-Regular", size: 16))
                             .foregroundColor(.blueDarker)
                     }
@@ -69,29 +65,22 @@ struct FavoriteFoodView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        if selectedFavorites.count >= 3 {
-                            Button(action: {
-                                // Handle the next action here
-                               // Router.shared.path.append(<#T##Element#>)
-                            }) {
-                                Image("Next_Button")
-                                    .resizable()
-                                    .frame(width: 294, height: 48)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                        } else {
-                            Image("Next_Button_Hidden")
+                        Button(action: {
+                            // Handle the next action here
+                            Router.shared.path.append(.FavoriteFoodView)
+                        }) {
+                            Image("Next_Button")
                                 .resizable()
                                 .frame(width: 294, height: 48)
-                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
                     }
                     .padding(.bottom, 62)
                     
                 }
                 .padding(.horizontal, 20)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            }
+            }.navigationBarBackButtonHidden()
         }
     }
     
@@ -101,8 +90,8 @@ struct FavoriteFoodView: View {
         var y: CGFloat = 0
         
         return ZStack(alignment: .topLeading) {
-            ForEach(PreferenceType.allCases, id: \.self) { favorite in
-                self.item(for: favorite)
+            ForEach(RestrictType.allCases, id: \.self) { restriction in
+                self.item(for: restriction)
                     .padding([.horizontal, .vertical], 4)
                     .alignmentGuide(.leading, computeValue: { dimension in
                         if (abs(x - dimension.width) > width) {
@@ -110,7 +99,7 @@ struct FavoriteFoodView: View {
                             y -= dimension.height
                         }
                         let result = x
-                        if favorite == PreferenceType.allCases.last {
+                        if restriction == RestrictType.allCases.last {
                             x = 0 // last item
                         } else {
                             x -= dimension.width
@@ -119,7 +108,7 @@ struct FavoriteFoodView: View {
                     })
                     .alignmentGuide(.top, computeValue: { _ in
                         let result = y
-                        if favorite == PreferenceType.allCases.last {
+                        if restriction == RestrictType.allCases.last {
                             y = 0 // last item
                         }
                         return result
@@ -133,37 +122,37 @@ struct FavoriteFoodView: View {
         let width: CGFloat = UIScreen.main.bounds.width - 32 // Assuming 16 padding on each side
         var x: CGFloat = 0
         
-        for favorite in PreferenceType.allCases {
-            let itemWidth = self.size(for: favorite).width + 8
+        for restriction in RestrictType.allCases {
+            let itemWidth = self.size(for: restriction).width + 8
             if (abs(x - itemWidth) > width) {
                 x = 0
-                height += self.size(for: favorite).height + 8
+                height += self.size(for: restriction).height + 8
             }
             x -= itemWidth
         }
-        height += self.size(for: PreferenceType.allCases.last!).height + 8
+        height += self.size(for: RestrictType.allCases.last!).height + 8
         return height
     }
     
-    private func size(for favorite: PreferenceType) -> CGSize {
+    private func size(for restriction: RestrictType) -> CGSize {
         let label = UILabel()
-        label.text = favorite.rawValue
+        label.text = restriction.rawValue
         return label.frame.size
     }
     
-    private func item(for favorite: PreferenceType) -> some View {
+    private func item(for restriction: RestrictType) -> some View {
         Button(action: {
-            if selectedFavorites.contains(favorite) {
-                selectedFavorites.remove(favorite)
+            if selectedRestrictions.contains(restriction) {
+                selectedRestrictions.remove(restriction)
             } else {
-                selectedFavorites.insert(favorite)
+                selectedRestrictions.insert(restriction)
             }
         }) {
-            Text(favorite.rawValue)
+            Text(restriction.rawValue)
                 .font(Font.custom("Lato-Regular", size: 14))
                 .padding(.horizontal, 18)
                 .padding(.vertical, 14)
-                .background(selectedFavorites.contains(favorite) ? .yellowNormal : .darkGreenLight)
+                .background(selectedRestrictions.contains(restriction) ? .yellowNormal : .darkGreenLight)
                 .cornerRadius(21)
                 .foregroundColor(.blueDarker)
         }
@@ -172,6 +161,6 @@ struct FavoriteFoodView: View {
 
 #Preview {
     ModelContainerPreview(ModelContainer.sample) {
-        FavoriteFoodView()
+        RestrictFoodView()
     }
 }

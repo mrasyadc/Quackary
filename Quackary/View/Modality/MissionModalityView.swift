@@ -15,7 +15,7 @@ struct MissionModalityView: View {
         VStack {
             Spacer()
             ModalityContent()
-                .background(Color.white)
+                .background(.whiteBlueLight)
                 .cornerRadius(32)
                 .shadow(radius: 10)
                 .offset(y: isExpanded ? 0 : 518)
