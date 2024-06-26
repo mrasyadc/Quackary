@@ -15,17 +15,73 @@ final class User {
     private var preferences: Set<PreferenceType> = []
     private var surprises: Set<PreferenceType> = []
     private var restricts: Set<RestrictType> = []
+    private var yellowStatus: AchievementStatus?
+    private var blueStatus: AchievementStatus?
+    private var item: Set<SurpriseItem>? = []
 
     init(name: String, preferences: Set<PreferenceType>, restricts: Set<RestrictType>) {
         self.userId = NSUUID() as UUID
         self.name = name
         self.preferences = preferences
         self.restricts = restricts
+        self.yellowStatus = .Egg
+        self.blueStatus = .None
+        self.item = []
         self.surprises = getSurpriseSetFromPreferenceSetSubstractRestrictSet(preferences, restricts)
-//        self.surprises = [.Beef]
+        //        self.surprises = [.Beef]
         // surprises itu UNION Preferences - UNION restrict
         // TODO: Lanjutkan self.surprises
         // self.surprises =
+    }
+
+    func getBlueStatus() -> AchievementStatus {
+        return blueStatus ?? .None
+    }
+
+    func getYellowStatus() -> AchievementStatus {
+        return yellowStatus ?? .None
+    }
+
+    func getListItem() -> Set<SurpriseItem> {
+        return item ?? []
+    }
+
+    func upgradeBlue() {
+        switch blueStatus {
+        case .None:
+            blueStatus = .Egg
+        case .Egg:
+            blueStatus = .Baby
+        case .Baby:
+            blueStatus = .Teen
+        case .Teen:
+            blueStatus = .Adult
+        case .Adult:
+            blueStatus = .Adult
+        case .none:
+            blueStatus = .Egg
+        }
+    }
+
+    func upgradeYellow() {
+        switch yellowStatus {
+        case .None:
+            yellowStatus = .Egg
+        case .Egg:
+            yellowStatus = .Baby
+        case .Baby:
+            yellowStatus = .Teen
+        case .Teen:
+            yellowStatus = .Adult
+        case .Adult:
+            yellowStatus = .Adult
+        case .none:
+            yellowStatus = .Egg
+        }
+    }
+
+    func addItemToAchievement(item: SurpriseItem) {
+        self.item?.insert(item)
     }
 
     func getUserPreferences() -> Set<PreferenceType> {
@@ -81,10 +137,24 @@ final class User {
     }
 }
 
-//enum PreferenceType: Hashable, Codable, Equatable {
+// enum PreferenceType: Hashable, Codable, Equatable {
 //    case Beef, Bento, Cheese, Chicken, Duck, Egg, Fish, FriesFood, Fruit, Lamb, Martabak, Meatball, Milk, Pasta, Pizza, PlantBased, Pork, Porridge, Ramen, Rea, Salad, Sandiwch, Satay, Soup, Steak, Sushi, Tempeh, Tofu, Vegetable, Yogurt
-//}
-
-//enum RestrictType: Hashable, Codable, Equatable {
+// }
+//
+// enum RestrictType: Hashable, Codable, Equatable {
 //    case Alcohol, TreeNuts, Beef, Wheat, Shrimp, Fish, Gluten, Pork, Seafood, Milk, Soy, Peanuts, Eggs, Dairy, Sesame, Shellfish
-//}
+// }
+
+enum AchievementStatus: Hashable, Codable, Equatable {
+    case None, Egg, Baby, Teen, Adult
+}
+
+enum SurpriseItem: String, CaseIterable, Hashable, Codable, Equatable {
+    case Ball = "Ball.json"
+    case Lighthouse = "Lighthouse.json"
+    case AirBaloon = "Air Balloon.sjon"
+    case Boat = "Boat.json"
+    case Hats = "Hats.json"
+    case Parasol = "Parasol.json"
+    case Tube = "Tube.json"
+}

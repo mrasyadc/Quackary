@@ -9,10 +9,10 @@ import SwiftUI
 
 struct BlueCard: View {
     @State var imageName: String = "Card, C"
-    @State var rewardImageName: String = "Reward Egg Upgrade" //ini gonta ganti sesuai reward
-    
+    @State var rewardImageName: String = "Reward Egg Upgrade" // ini gonta ganti sesuai reward
+
     var body: some View {
-        CardView(imageName: $imageName, 
+        CardView(imageName: $imageName,
                  rewardImageName: $rewardImageName)
     }
 }

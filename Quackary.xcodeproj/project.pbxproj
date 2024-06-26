@@ -61,6 +61,13 @@
 		9D870E7A2C27908D002071FC /* SampleData+Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E792C27908D002071FC /* SampleData+Place.swift */; };
 		9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */; };
 		9D870E802C279AF1002071FC /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7F2C279AF1002071FC /* RouteView.swift */; };
+		9D9168F82C2C53C800E49C3E /* WorldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9168F72C2C53C800E49C3E /* WorldViewModel.swift */; };
+		9D9168FA2C2C59BF00E49C3E /* SwiftDataInsertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9168F92C2C59BF00E49C3E /* SwiftDataInsertion.swift */; };
+		9D9168FC2C2C664800E49C3E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9168FB2C2C664800E49C3E /* CardViewModel.swift */; };
+		9D9169002C2C6E6C00E49C3E /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9168FF2C2C6E6C00E49C3E /* GlobalState.swift */; };
+		9D9169022C2C6EF400E49C3E /* SampleData+GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9169012C2C6EF400E49C3E /* SampleData+GlobalState.swift */; };
+		9D9169042C2C710D00E49C3E /* MissionModalityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9169032C2C710D00E49C3E /* MissionModalityViewModel.swift */; };
+		9D9169062C2C73C800E49C3E /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9169052C2C73C800E49C3E /* RewardViewModel.swift */; };
 		9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3882C227B03001590F4 /* AudioManager.swift */; };
 		9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD38A2C227C18001590F4 /* HapticManager.swift */; };
 		9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */; };
@@ -151,6 +158,13 @@
 		9D870E792C27908D002071FC /* SampleData+Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+Place.swift"; sourceTree = "<group>"; };
 		9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+Mission.swift"; sourceTree = "<group>"; };
 		9D870E7F2C279AF1002071FC /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		9D9168F72C2C53C800E49C3E /* WorldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewModel.swift; sourceTree = "<group>"; };
+		9D9168F92C2C59BF00E49C3E /* SwiftDataInsertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataInsertion.swift; sourceTree = "<group>"; };
+		9D9168FB2C2C664800E49C3E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		9D9168FF2C2C6E6C00E49C3E /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		9D9169012C2C6EF400E49C3E /* SampleData+GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+GlobalState.swift"; sourceTree = "<group>"; };
+		9D9169032C2C710D00E49C3E /* MissionModalityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModalityViewModel.swift; sourceTree = "<group>"; };
+		9D9169052C2C73C800E49C3E /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
 		9DAAD3882C227B03001590F4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		9DAAD38A2C227C18001590F4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -332,6 +346,8 @@
 				9D870E772C278FAB002071FC /* SampleData+User.swift */,
 				9D870E792C27908D002071FC /* SampleData+Place.swift */,
 				9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */,
+				9D9169012C2C6EF400E49C3E /* SampleData+GlobalState.swift */,
+				9D9168F92C2C59BF00E49C3E /* SwiftDataInsertion.swift */,
 			);
 			path = SampleData;
 			sourceTree = "<group>";
@@ -444,6 +460,7 @@
 				9DE706EF2C22AC8400A419E6 /* User.swift */,
 				9DE706F12C239D5C00A419E6 /* Place.swift */,
 				9DE706F32C239E7D00A419E6 /* Achievement.swift */,
+				9D9168FF2C2C6E6C00E49C3E /* GlobalState.swift */,
 				9DE706F52C239F7A00A419E6 /* Mission.swift */,
 				9D531B202C283298003092E9 /* Router.swift */,
 				011A8E492C2AEE7200D05957 /* RewardState.swift */,
@@ -470,8 +487,12 @@
 			isa = PBXGroup;
 			children = (
 				E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */,
+				9D9168F72C2C53C800E49C3E /* WorldViewModel.swift */,
+				9D9168FB2C2C664800E49C3E /* CardViewModel.swift */,
+				9D9169032C2C710D00E49C3E /* MissionModalityViewModel.swift */,
 				9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */,
 				9D6B1B9D2C285871007FDE25 /* VideoPLayerViewModel.swift */,
+				9D9169052C2C73C800E49C3E /* RewardViewModel.swift */,
 				9DD682092C2BBFC100F6D706 /* DetailPlaceViewModel.swift */,
 			);
 			path = ViewModel;
@@ -599,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01FD144F2C2A788600D65ECD /* CardView.swift in Sources */,
+				9D9168FA2C2C59BF00E49C3E /* SwiftDataInsertion.swift in Sources */,
 				01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */,
 				9D531B272C28391F003092E9 /* StoryFirstView.swift in Sources */,
 				01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */,
@@ -608,6 +630,7 @@
 				011A8E4A2C2AEE7200D05957 /* RewardState.swift in Sources */,
 				9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */,
 				9D870E782C278FAB002071FC /* SampleData+User.swift in Sources */,
+				9D9169062C2C73C800E49C3E /* RewardViewModel.swift in Sources */,
 				9D870E7A2C27908D002071FC /* SampleData+Place.swift in Sources */,
 				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,
 				9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */,
@@ -617,9 +640,13 @@
 				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
 				9DE706FA2C242E9300A419E6 /* AchievementView.swift in Sources */,
 				E40A7C1C2C2BB3F700736EE1 /* FavoriteFoodView.swift in Sources */,
+				9D9168F82C2C53C800E49C3E /* WorldViewModel.swift in Sources */,
+				9D9169042C2C710D00E49C3E /* MissionModalityViewModel.swift in Sources */,
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
+				9D9169022C2C6EF400E49C3E /* SampleData+GlobalState.swift in Sources */,
+				9D9168FC2C2C664800E49C3E /* CardViewModel.swift in Sources */,
 				016430112C2AC1BA00643F5B /* MissionModalityView.swift in Sources */,
 				9D531B232C2838A6003092E9 /* HomeView.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
@@ -646,6 +673,7 @@
 				01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */,
 				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E802C279AF1002071FC /* RouteView.swift in Sources */,
+				9D9169002C2C6E6C00E49C3E /* GlobalState.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
 				9D870E752C25654F002071FC /* ModelContainerPreview.swift in Sources */,
 				9DE706F82C242DAC00A419E6 /* AchievementViewModel.swift in Sources */,
@@ -782,7 +810,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -813,7 +841,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
