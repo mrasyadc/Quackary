@@ -53,9 +53,17 @@ struct MainView: View {
                         RewardsClaimView()
                     case .WorldViewUpdated:
                         WorldUpdatedView()
+
                     case .RestrictFoodView:
                         RestrictFoodView()
+
+                    case .MissionModalityView:
+                        MissionModalityView()
+                    case .WorldAfterGacha:
+                        WorldAfterGachaView()
+
                     }
+                    
                 }
         }
     }
