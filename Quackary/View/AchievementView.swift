@@ -11,13 +11,14 @@ import SwiftUI
 struct AchievementView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(sort: \Achievement.achievementId) var achievement: [Achievement]
+    @State var viewModel = DetailPlaceViewModel()
 
     var body: some View {
-        Text(String(achievement.count))
-        List(achievement) { achie in
-            Text(achie.name)
-            Text("Is Done: \(String(achie.isDone))")
+        List(viewModel.places) { place in
+            Text(place.name)
+        }.onAppear {
+            viewModel.modelContext = modelContext
+            viewModel.fetchPlaces()
         }
     }
 }

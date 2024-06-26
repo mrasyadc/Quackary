@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct RouteView: View {
     @StateObject private var navPath = Router.shared
 
     var body: some View {
         NavigationStack(path: $navPath.path) {
             SplashScreenView()
-
                 .toolbar(.hidden)
                 .navigationDestination(for: Router.Destination.self) { destination in
                     switch destination {
@@ -53,17 +52,20 @@ struct MainView: View {
                         RewardsClaimView()
                     case .WorldViewUpdated:
                         WorldUpdatedView()
+                    case .RestrictFoodView:
+                        RestrictFoodView()
                     case .MissionModalityView:
                         MissionModalityView()
                     case .WorldAfterGacha:
                         WorldAfterGachaView()
+                    case .FavoriteFoodView:
+                        FavoriteFoodView()
                     }
-                    
                 }
         }
     }
 }
 
 #Preview {
-    MainView()
+    RouteView()
 }
