@@ -55,6 +55,8 @@ struct MainView: View {
                         WorldUpdatedView()
                     case .RestrictFoodView:
                         RestrictFoodView()
+                    case .FavoriteFoodView:
+                        FavoriteFoodView()
                     }
                 }
         }

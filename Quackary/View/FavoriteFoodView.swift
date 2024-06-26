@@ -1,19 +1,19 @@
 //
-//  RestrictFoodView.swift
+//  FavoriteFoodView.swift
 //  Quackary
 //
-//  Created by Romi Fadhurohman Nabil on 25/06/24.
+//  Created by Romi Fadhurohman Nabil on 26/06/24.
 //
 
 import SwiftUI
 import SwiftData
 
-enum RestrictType: String, CaseIterable, Hashable, Codable, Equatable {
-    case Alcohol, TreeNuts, Beef, Wheat, Shrimp, Fish, Gluten, Pork, Seafood, Milk, Soy, Peanuts, Eggs, Dairy, Sesame, Shellfish
+enum PreferenceType: String, CaseIterable, Hashable, Codable, Equatable {
+    case Beef, Bento, Cheese, Chicken, Duck, Egg, Fish, FriesFood, Fruit, Lamb, Martabak, Meatball, Milk, Pasta, Pizza, PlantBased, Pork, Porridge, Ramen, Rea, Salad, Sandiwch, Satay, Soup, Steak, Sushi, Tempeh, Tofu, Vegetable, Yogurt
 }
 
-struct RestrictFoodView: View {
-    @State private var selectedRestrictions: Set<RestrictType> = []
+struct FavoriteFoodView: View {
+    @State private var selectedFavorites: Set<PreferenceType> = []
     
     var body: some View {
         ZStack {
@@ -27,7 +27,7 @@ struct RestrictFoodView: View {
                         .cornerRadius(100)
                     
                     Rectangle()
-                        .foregroundColor(.darkGreenLight)
+                        .foregroundColor(.blueNormal)
                         .frame(width: 107, height: 4)
                         .cornerRadius(100)
                     
@@ -41,10 +41,10 @@ struct RestrictFoodView: View {
                 
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
-                        Text("Your Food Restrictions")
+                        Text("Your Ultimate Food Favorites")
                             .font(Font.custom("Lato-ExtraBold", size: 22))
                             .foregroundColor(.blueDarker)
-                        Text("Tell us what’s a no for you!")
+                        Text("Tell us at least 3 food you can't live without!")
                             .font(Font.custom("Lato-Regular", size: 16))
                             .foregroundColor(.blueDarker)
                     }
@@ -69,10 +69,10 @@ struct RestrictFoodView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        if selectedRestrictions.count >= 3 {
+                        if selectedFavorites.count >= 3 {
                             Button(action: {
                                 // Handle the next action here
-                                Router.shared.path.append(.FavoriteFoodView)
+                               // Router.shared.path.append(<#T##Element#>)
                             }) {
                                 Image("Next_Button")
                                     .resizable()
@@ -101,8 +101,8 @@ struct RestrictFoodView: View {
         var y: CGFloat = 0
         
         return ZStack(alignment: .topLeading) {
-            ForEach(RestrictType.allCases, id: \.self) { restriction in
-                self.item(for: restriction)
+            ForEach(PreferenceType.allCases, id: \.self) { favorite in
+                self.item(for: favorite)
                     .padding([.horizontal, .vertical], 4)
                     .alignmentGuide(.leading, computeValue: { dimension in
                         if (abs(x - dimension.width) > width) {
@@ -110,7 +110,7 @@ struct RestrictFoodView: View {
                             y -= dimension.height
                         }
                         let result = x
-                        if restriction == RestrictType.allCases.last {
+                        if favorite == PreferenceType.allCases.last {
                             x = 0 // last item
                         } else {
                             x -= dimension.width
@@ -119,7 +119,7 @@ struct RestrictFoodView: View {
                     })
                     .alignmentGuide(.top, computeValue: { _ in
                         let result = y
-                        if restriction == RestrictType.allCases.last {
+                        if favorite == PreferenceType.allCases.last {
                             y = 0 // last item
                         }
                         return result
@@ -133,37 +133,37 @@ struct RestrictFoodView: View {
         let width: CGFloat = UIScreen.main.bounds.width - 32 // Assuming 16 padding on each side
         var x: CGFloat = 0
         
-        for restriction in RestrictType.allCases {
-            let itemWidth = self.size(for: restriction).width + 8
+        for favorite in PreferenceType.allCases {
+            let itemWidth = self.size(for: favorite).width + 8
             if (abs(x - itemWidth) > width) {
                 x = 0
-                height += self.size(for: restriction).height + 8
+                height += self.size(for: favorite).height + 8
             }
             x -= itemWidth
         }
-        height += self.size(for: RestrictType.allCases.last!).height + 8
+        height += self.size(for: PreferenceType.allCases.last!).height + 8
         return height
     }
     
-    private func size(for restriction: RestrictType) -> CGSize {
+    private func size(for favorite: PreferenceType) -> CGSize {
         let label = UILabel()
-        label.text = restriction.rawValue
+        label.text = favorite.rawValue
         return label.frame.size
     }
     
-    private func item(for restriction: RestrictType) -> some View {
+    private func item(for favorite: PreferenceType) -> some View {
         Button(action: {
-            if selectedRestrictions.contains(restriction) {
-                selectedRestrictions.remove(restriction)
+            if selectedFavorites.contains(favorite) {
+                selectedFavorites.remove(favorite)
             } else {
-                selectedRestrictions.insert(restriction)
+                selectedFavorites.insert(favorite)
             }
         }) {
-            Text(restriction.rawValue)
+            Text(favorite.rawValue)
                 .font(Font.custom("Lato-Regular", size: 14))
                 .padding(.horizontal, 18)
                 .padding(.vertical, 14)
-                .background(selectedRestrictions.contains(restriction) ? .yellowNormal : .darkGreenLight)
+                .background(selectedFavorites.contains(favorite) ? .yellowNormal : .darkGreenLight)
                 .cornerRadius(21)
                 .foregroundColor(.blueDarker)
         }
@@ -172,6 +172,6 @@ struct RestrictFoodView: View {
 
 #Preview {
     ModelContainerPreview(ModelContainer.sample) {
-        RestrictFoodView()
+        FavoriteFoodView()
     }
 }

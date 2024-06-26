@@ -11,7 +11,7 @@ class Router: ObservableObject {
     @Published var path: [Destination] = []
 
     enum Destination: String, Hashable {
-        case SplashScreen, Home, Story, SecondStory, OnBoarding, Missions, Gacha, CheckIn, GoodReward, BadReward, ShareImage, History, DetailPlace, World, CheckInCapturedPhoto, Achievement, Reward, WorldViewUpdated, RestrictFoodView
+        case SplashScreen, Home, Story, SecondStory, OnBoarding, Missions, Gacha, CheckIn, GoodReward, BadReward, ShareImage, History, DetailPlace, World, CheckInCapturedPhoto, Achievement, Reward, WorldViewUpdated, RestrictFoodView, FavoriteFoodView
     }
 
     static let shared: Router = .init()

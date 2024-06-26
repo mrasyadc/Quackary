@@ -15,7 +15,7 @@ struct DetailPlaceView: View {
     }) var places: [Place]
     
     var body: some View {
-        var samplePhoto = places[0].imageNames
+        let samplePhoto = places[0].imageNames
         
         ZStack {
             Color(.whiteBlueLight).ignoresSafeArea()
