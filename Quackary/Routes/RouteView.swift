@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct RouteView: View {
     @StateObject private var navPath = Router.shared
 
     var body: some View {
@@ -67,5 +67,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    RouteView()
 }

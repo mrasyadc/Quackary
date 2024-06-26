@@ -27,22 +27,6 @@ extension Achievement {
         modelContext.insert(Achievement(name: "String", detail: "String", imageName: "String"))
         modelContext.insert(Achievement(name: "String", detail: "String", imageName: "String"))
         modelContext.insert(Achievement(name: "String", detail: "String", imageName: "String"))
-
-        // Add the animals to the model context.
-//        modelContext.insert(Animal.dog)
-//        modelContext.insert(Animal.cat)
-//        modelContext.insert(Animal.kangaroo)
-//        modelContext.insert(Animal.gibbon)
-//        modelContext.insert(Animal.sparrow)
-//        modelContext.insert(Animal.newt)
-
-        // Set the category for each animal.
-//        Animal.dog.category = mammal
-//        Animal.cat.category = mammal
-//        Animal.kangaroo.category = mammal
-//        Animal.gibbon.category = mammal
-//        Animal.sparrow.category = bird
-//        Animal.newt.category = amphibian
     }
 
     static func reloadSampleData(modelContext: ModelContext) {
