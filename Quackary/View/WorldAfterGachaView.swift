@@ -1,14 +1,13 @@
 //
-//  WorldView.swift
+//  WorldViewAfterGacha.swift
 //  Quackary
 //
-//  Created by Bunga Prameswari on 24/06/24.
+//  Created by Bunga Prameswari on 25/06/24.
 //
 
-import AVFoundation
 import SwiftUI
 
-struct WorldView: View {
+struct WorldAfterGachaView: View {
     var body: some View {
         ZStack {
             LoopingVideoPlayerView(videoURL: Bundle.main.url(forResource: "Main Page Background", withExtension: "mp4")!)
@@ -16,12 +15,13 @@ struct WorldView: View {
             
             LottieView(name: "Yellow Egg.json", loopMode: .loop)
             
-            WeekStarterModalityView()
-
+            MissionModalityView()
+            
         }.navigationBarBackButtonHidden()
+        
     }
 }
 
 #Preview {
-    WorldView()
+    WorldAfterGachaView()
 }

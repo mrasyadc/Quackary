@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011A8E462C2AD9AD00D05957 /* WorldAfterGachaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A8E452C2AD9AD00D05957 /* WorldAfterGachaView.swift */; };
+		011A8E482C2AEDA900D05957 /* WeekStarterModalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */; };
+		011A8E4A2C2AEE7200D05957 /* RewardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A8E492C2AEE7200D05957 /* RewardState.swift */; };
+		011A8E4E2C2AF12500D05957 /* Hats.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A8E4B2C2AF12500D05957 /* Hats.json */; };
+		011A8E4F2C2AF12500D05957 /* Boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A8E4C2C2AF12500D05957 /* Boat.json */; };
+		011A8E502C2AF12500D05957 /* Air Balloon.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A8E4D2C2AF12500D05957 /* Air Balloon.json */; };
+		016430112C2AC1BA00643F5B /* MissionModalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016430102C2AC1BA00643F5B /* MissionModalityView.swift */; };
 		01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5CDE02C29B541003E30EA /* WorldView.swift */; };
 		01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */; };
 		01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F72C29C10000A498B0 /* Blue Duck Adult.json */; };
@@ -17,10 +24,7 @@
 		01E5680E2C29C10000A498B0 /* Yellow Duck Child.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FC2C29C10000A498B0 /* Yellow Duck Child.json */; };
 		01E5680F2C29C10000A498B0 /* Yellow Duck Teen.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FD2C29C10000A498B0 /* Yellow Duck Teen.json */; };
 		01E568102C29C10000A498B0 /* Yellow Egg.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567FE2C29C10000A498B0 /* Yellow Egg.json */; };
-		01E568112C29C10000A498B0 /* Air Balloon.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568002C29C10000A498B0 /* Air Balloon.json */; };
 		01E568122C29C10000A498B0 /* Ball.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568012C29C10000A498B0 /* Ball.json */; };
-		01E568132C29C10000A498B0 /* Boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568022C29C10000A498B0 /* Boat.json */; };
-		01E568142C29C10000A498B0 /* Hat.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568032C29C10000A498B0 /* Hat.json */; };
 		01E568152C29C10000A498B0 /* Lighthouse.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568042C29C10000A498B0 /* Lighthouse.json */; };
 		01E568162C29C10000A498B0 /* Parasol.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568052C29C10000A498B0 /* Parasol.json */; };
 		01E568172C29C10000A498B0 /* Tube.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E568062C29C10000A498B0 /* Tube.json */; };
@@ -29,6 +33,9 @@
 		01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */; };
 		01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5681F2C29CB3D00A498B0 /* CameraView.swift */; };
 		01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */; };
+		01FD144F2C2A788600D65ECD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD144E2C2A788600D65ECD /* CardView.swift */; };
+		01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14502C2A9DBD00D65ECD /* BlueCard.swift */; };
+		01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD14522C2A9DCD00D65ECD /* YellowCard.swift */; };
 		586259EF2C288D0400B2DE8B /* RewardsClaimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */; };
 		922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */; };
 		9D00139C2C2A742E006F4D87 /* WorldUpdatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */; };
@@ -83,12 +90,20 @@
 		9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */; };
 		9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */; };
 		9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */; };
+		E40A7C1A2C2ACA1C00736EE1 /* RestrictFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */; };
 		E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */; };
 		E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */; };
 		E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011A8E452C2AD9AD00D05957 /* WorldAfterGachaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldAfterGachaView.swift; sourceTree = "<group>"; };
+		011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStarterModalityView.swift; sourceTree = "<group>"; };
+		011A8E492C2AEE7200D05957 /* RewardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardState.swift; sourceTree = "<group>"; };
+		011A8E4B2C2AF12500D05957 /* Hats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hats.json; sourceTree = "<group>"; };
+		011A8E4C2C2AF12500D05957 /* Boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat.json; sourceTree = "<group>"; };
+		011A8E4D2C2AF12500D05957 /* Air Balloon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Air Balloon.json"; sourceTree = "<group>"; };
+		016430102C2AC1BA00643F5B /* MissionModalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModalityView.swift; sourceTree = "<group>"; };
 		01B5CDE02C29B541003E30EA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 		01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Main Page Background.mp4"; sourceTree = "<group>"; };
 		01E567F72C29C10000A498B0 /* Blue Duck Adult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Adult.json"; sourceTree = "<group>"; };
@@ -99,10 +114,7 @@
 		01E567FC2C29C10000A498B0 /* Yellow Duck Child.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Duck Child.json"; sourceTree = "<group>"; };
 		01E567FD2C29C10000A498B0 /* Yellow Duck Teen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Duck Teen.json"; sourceTree = "<group>"; };
 		01E567FE2C29C10000A498B0 /* Yellow Egg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Yellow Egg.json"; sourceTree = "<group>"; };
-		01E568002C29C10000A498B0 /* Air Balloon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Air Balloon.json"; sourceTree = "<group>"; };
 		01E568012C29C10000A498B0 /* Ball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ball.json; sourceTree = "<group>"; };
-		01E568022C29C10000A498B0 /* Boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat.json; sourceTree = "<group>"; };
-		01E568032C29C10000A498B0 /* Hat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hat.json; sourceTree = "<group>"; };
 		01E568042C29C10000A498B0 /* Lighthouse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lighthouse.json; sourceTree = "<group>"; };
 		01E568052C29C10000A498B0 /* Parasol.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Parasol.json; sourceTree = "<group>"; };
 		01E568062C29C10000A498B0 /* Tube.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tube.json; sourceTree = "<group>"; };
@@ -110,6 +122,9 @@
 		01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCameraView.swift; sourceTree = "<group>"; };
 		01E5681F2C29CB3D00A498B0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCapturedPhotoView.swift; sourceTree = "<group>"; };
+		01FD144E2C2A788600D65ECD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		01FD14502C2A9DBD00D65ECD /* BlueCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCard.swift; sourceTree = "<group>"; };
+		01FD14522C2A9DCD00D65ECD /* YellowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCard.swift; sourceTree = "<group>"; };
 		586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsClaimView.swift; sourceTree = "<group>"; };
 		922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceView.swift; sourceTree = "<group>"; };
 		9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUpdatedView.swift; sourceTree = "<group>"; };
@@ -166,6 +181,7 @@
 		9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen Shake.mp4"; sourceTree = "<group>"; };
 		9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen 1.mp4"; sourceTree = "<group>"; };
+		E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictFoodView.swift; sourceTree = "<group>"; };
 		E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
 		E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
 		E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
@@ -201,11 +217,11 @@
 		01E568072C29C10000A498B0 /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				01E568002C29C10000A498B0 /* Air Balloon.json */,
 				01E568012C29C10000A498B0 /* Ball.json */,
-				01E568022C29C10000A498B0 /* Boat.json */,
-				01E568032C29C10000A498B0 /* Hat.json */,
 				01E568042C29C10000A498B0 /* Lighthouse.json */,
+				011A8E4D2C2AF12500D05957 /* Air Balloon.json */,
+				011A8E4C2C2AF12500D05957 /* Boat.json */,
+				011A8E4B2C2AF12500D05957 /* Hats.json */,
 				01E568052C29C10000A498B0 /* Parasol.json */,
 				01E568062C29C10000A498B0 /* Tube.json */,
 			);
@@ -335,6 +351,7 @@
 				9DE706F32C239E7D00A419E6 /* Achievement.swift */,
 				9DE706F52C239F7A00A419E6 /* Mission.swift */,
 				9D531B202C283298003092E9 /* Router.swift */,
+				011A8E492C2AEE7200D05957 /* RewardState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,13 +374,23 @@
 				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
 				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
 				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
-				01B5CDE02C29B541003E30EA /* WorldView.swift */,
 				01E5681B2C29C3B300A498B0 /* LottieView.swift */,
+				01B5CDE02C29B541003E30EA /* WorldView.swift */,
+				011A8E452C2AD9AD00D05957 /* WorldAfterGachaView.swift */,
 				9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */,
 				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
 				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
 				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
 				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
+
+				E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */,
+
+				01FD144E2C2A788600D65ECD /* CardView.swift */,
+				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
+				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
+				016430102C2AC1BA00643F5B /* MissionModalityView.swift */,
+				011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,28 +491,28 @@
 				9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */,
 				01E568152C29C10000A498B0 /* Lighthouse.json in Resources */,
 				01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */,
-				01E568132C29C10000A498B0 /* Boat.json in Resources */,
 				9DAAD3A12C227FFF001590F4 /* Lato-Thin.ttf in Resources */,
 				01E5680D2C29C10000A498B0 /* Yellow Duck Adult.json in Resources */,
 				01E568172C29C10000A498B0 /* Tube.json in Resources */,
-				01E568142C29C10000A498B0 /* Hat.json in Resources */,
 				9DAAD39C2C227FFF001590F4 /* Lato-BoldItalic.ttf in Resources */,
 				9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */,
 				01E568102C29C10000A498B0 /* Yellow Egg.json in Resources */,
 				9DAAD3A32C227FFF001590F4 /* OFL.txt in Resources */,
 				9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */,
 				9DAAD3A02C227FFF001590F4 /* Lato-Regular.ttf in Resources */,
-				01E568112C29C10000A498B0 /* Air Balloon.json in Resources */,
 				9D531B1E2C282EAD003092E9 /* Home.mp4 in Resources */,
 				01E5680E2C29C10000A498B0 /* Yellow Duck Child.json in Resources */,
 				01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */,
 				01E568122C29C10000A498B0 /* Ball.json in Resources */,
+				011A8E4E2C2AF12500D05957 /* Hats.json in Resources */,
 				01E5680B2C29C10000A498B0 /* Blue Duck Teen.json in Resources */,
 				9D531B1D2C282EAD003092E9 /* Story 1.mp4 in Resources */,
 				9DAAD39F2C227FFF001590F4 /* Lato-LightItalic.ttf in Resources */,
 				9DAAD39E2C227FFF001590F4 /* Lato-Light.ttf in Resources */,
+				011A8E502C2AF12500D05957 /* Air Balloon.json in Resources */,
 				01E568162C29C10000A498B0 /* Parasol.json in Resources */,
 				9D6B1BA22C2867D7007FDE25 /* Lato-ExtraBold.ttf in Resources */,
+				011A8E4F2C2AF12500D05957 /* Boat.json in Resources */,
 				9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */,
 				9D531B1F2C282EAD003092E9 /* Story 2.mp4 in Resources */,
 			);
@@ -498,17 +525,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FD144F2C2A788600D65ECD /* CardView.swift in Sources */,
+				01FD14532C2A9DCD00D65ECD /* YellowCard.swift in Sources */,
 				9D531B272C28391F003092E9 /* StoryFirstView.swift in Sources */,
 				01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */,
 				01E5681C2C29C3B300A498B0 /* LottieView.swift in Sources */,
 				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
+				011A8E4A2C2AEE7200D05957 /* RewardState.swift in Sources */,
 				9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */,
 				9D870E782C278FAB002071FC /* SampleData+User.swift in Sources */,
 				9D870E7A2C27908D002071FC /* SampleData+Place.swift in Sources */,
 				E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */,
 				9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */,
+				011A8E462C2AD9AD00D05957 /* WorldAfterGachaView.swift in Sources */,
 				9D870E762C25654F002071FC /* Preview+ModelContainer.swift in Sources */,
 				9D00139C2C2A742E006F4D87 /* WorldUpdatedView.swift in Sources */,
 				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
@@ -517,6 +548,7 @@
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
 				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
+				016430112C2AC1BA00643F5B /* MissionModalityView.swift in Sources */,
 				9D531B232C2838A6003092E9 /* HomeView.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
 				9D6B1B9E2C285871007FDE25 /* VideoPLayerViewModel.swift in Sources */,
@@ -528,14 +560,17 @@
 				01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */,
 				9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */,
 				9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */,
+				011A8E482C2AEDA900D05957 /* WeekStarterModalityView.swift in Sources */,
 				9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */,
 				9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */,
 				9D531B212C283298003092E9 /* Router.swift in Sources */,
 				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
 				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
 				01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */,
+				E40A7C1A2C2ACA1C00736EE1 /* RestrictFoodView.swift in Sources */,
 				9DE706F02C22AC8400A419E6 /* User.swift in Sources */,
 				9D6B1BA42C2932AE007FDE25 /* StorySecondView.swift in Sources */,
+				01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */,
 				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
 				9D870E802C279AF1002071FC /* MainView.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
@@ -674,7 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = W64G46TNFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -705,7 +740,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = W64G46TNFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;

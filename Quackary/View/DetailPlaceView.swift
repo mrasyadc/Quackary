@@ -28,6 +28,9 @@ struct DetailPlaceView: View {
                             .foregroundColor(Color(red: 69/255.0, green: 123/255.0, blue: 157/255.0))
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 24, height: 24)
+                            .onTapGesture {
+                                Router.shared.path.popLast()
+                            }
                     })
       
                     Spacer()
@@ -97,7 +100,12 @@ struct DetailPlaceView: View {
                                 .cornerRadius(10)
                             Spacer()
                         }
-                    }.scrollTargetLayout()
+                        
+                    }
+                    .scrollTargetLayout()
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                    
                 }.scrollTargetBehavior(.viewAligned)
                     
                 // VSTACK : DESCRIPTION

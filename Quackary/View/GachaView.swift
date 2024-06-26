@@ -19,7 +19,7 @@ struct GachaView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(filter: #Predicate<Mission> { $0.missionId == missionId
     }) var missions: [Mission]
-
+    
     var body: some View {
 //        var _ = print(missions[0].isPlaceHidden)
         ZStack {
@@ -52,7 +52,8 @@ struct GachaView: View {
                 secondPlayer?.isMuted = true
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                Router.shared.path.append(.DetailPlace)
+//                Router.shared.path.append(.DetailPlace)
+                Router.shared.path.append(.WorldAfterGacha)
                 missions[0].setMissionStateAfterGacha()
                 missions[0].setMissionFinished()
 
