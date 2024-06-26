@@ -52,7 +52,7 @@ struct QuackaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            RouteView()
         }
         .modelContainer(sharedModelContainer)
     }

@@ -17,8 +17,6 @@ class DetailPlaceViewModel {
     func fetchPlaces() {
         let descriptor = FetchDescriptor<Place>(sortBy: [SortDescriptor(\.name)])
 
-        places = (try? modelContext?.fetch(descriptor))!
+        places = (try? modelContext?.fetch(descriptor)) ?? []
     }
-    
-    
 }

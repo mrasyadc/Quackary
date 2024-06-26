@@ -58,8 +58,7 @@
 		9D870E782C278FAB002071FC /* SampleData+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E772C278FAB002071FC /* SampleData+User.swift */; };
 		9D870E7A2C27908D002071FC /* SampleData+Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E792C27908D002071FC /* SampleData+Place.swift */; };
 		9D870E7C2C2791D2002071FC /* SampleData+Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */; };
-		9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7D2C2799D1002071FC /* SwiftDataInsertion.swift */; };
-		9D870E802C279AF1002071FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7F2C279AF1002071FC /* MainView.swift */; };
+		9D870E802C279AF1002071FC /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D870E7F2C279AF1002071FC /* RouteView.swift */; };
 		9DAAD3892C227B03001590F4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3882C227B03001590F4 /* AudioManager.swift */; };
 		9DAAD38B2C227C18001590F4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD38A2C227C18001590F4 /* HapticManager.swift */; };
 		9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */; };
@@ -76,7 +75,6 @@
 		9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3A52C2287AF001590F4 /* FontView.swift */; };
 		9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119732C1957ED00ECF58C /* QuackaryApp.swift */; };
 		9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119752C1957ED00ECF58C /* ContentView.swift */; };
-		9DC119782C1957ED00ECF58C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119772C1957ED00ECF58C /* Item.swift */; };
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
 		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
@@ -149,8 +147,7 @@
 		9D870E772C278FAB002071FC /* SampleData+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+User.swift"; sourceTree = "<group>"; };
 		9D870E792C27908D002071FC /* SampleData+Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+Place.swift"; sourceTree = "<group>"; };
 		9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleData+Mission.swift"; sourceTree = "<group>"; };
-		9D870E7D2C2799D1002071FC /* SwiftDataInsertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataInsertion.swift; sourceTree = "<group>"; };
-		9D870E7F2C279AF1002071FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9D870E7F2C279AF1002071FC /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		9DAAD3882C227B03001590F4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		9DAAD38A2C227C18001590F4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		9DAAD38D2C227FFF001590F4 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -169,7 +166,6 @@
 		9DC119702C1957ED00ECF58C /* Quackary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC119732C1957ED00ECF58C /* QuackaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackaryApp.swift; sourceTree = "<group>"; };
 		9DC119752C1957ED00ECF58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9DC119772C1957ED00ECF58C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
@@ -248,7 +244,6 @@
 				9D870E772C278FAB002071FC /* SampleData+User.swift */,
 				9D870E792C27908D002071FC /* SampleData+Place.swift */,
 				9D870E7B2C2791D2002071FC /* SampleData+Mission.swift */,
-				9D870E7D2C2799D1002071FC /* SwiftDataInsertion.swift */,
 			);
 			path = SampleData;
 			sourceTree = "<group>";
@@ -308,6 +303,7 @@
 		9DC119722C1957ED00ECF58C /* Quackary */ = {
 			isa = PBXGroup;
 			children = (
+				9DDCAE5D2C2BD42C0037380A /* Routes */,
 				9DAAD3A42C2281D8001590F4 /* Info.plist */,
 				9DAAD38C2C227FD9001590F4 /* Fonts */,
 				E4DC6C252C1967D900DB851F /* Util */,
@@ -333,6 +329,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9DDCAE5D2C2BD42C0037380A /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				9D870E7F2C279AF1002071FC /* RouteView.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
 		9DE707012C2512D200A419E6 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,7 +353,6 @@
 		E4DC6C222C19674500DB851F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9DC119772C1957ED00ECF58C /* Item.swift */,
 				9DE706EF2C22AC8400A419E6 /* User.swift */,
 				9DE706F12C239D5C00A419E6 /* Place.swift */,
 				9DE706F32C239E7D00A419E6 /* Achievement.swift */,
@@ -364,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				9DC119752C1957ED00ECF58C /* ContentView.swift */,
-				9D870E7F2C279AF1002071FC /* MainView.swift */,
 				9D531B222C2838A6003092E9 /* HomeView.swift */,
 				9D531B242C2838D5003092E9 /* SplashScreenView.swift */,
 				9D531B262C28391F003092E9 /* StoryFirstView.swift */,
@@ -551,7 +553,6 @@
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
-				9DC119782C1957ED00ECF58C /* Item.swift in Sources */,
 				016430112C2AC1BA00643F5B /* MissionModalityView.swift in Sources */,
 				9D531B232C2838A6003092E9 /* HomeView.swift in Sources */,
 				9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */,
@@ -563,7 +564,6 @@
 				01E568202C29CB3D00A498B0 /* CameraView.swift in Sources */,
 				01E5681E2C29C52000A498B0 /* CheckInCameraView.swift in Sources */,
 				9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */,
-				9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */,
 				011A8E482C2AEDA900D05957 /* WeekStarterModalityView.swift in Sources */,
 				9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */,
 				9DD6820A2C2BBFC100F6D706 /* DetailPlaceViewModel.swift in Sources */,
@@ -577,7 +577,7 @@
 				9D6B1BA42C2932AE007FDE25 /* StorySecondView.swift in Sources */,
 				01FD14512C2A9DBD00D65ECD /* BlueCard.swift in Sources */,
 				922C135B2C29A2E8006E4EB7 /* DetailPlaceView.swift in Sources */,
-				9D870E802C279AF1002071FC /* MainView.swift in Sources */,
+				9D870E802C279AF1002071FC /* RouteView.swift in Sources */,
 				9DE706F22C239D5C00A419E6 /* Place.swift in Sources */,
 				9D870E752C25654F002071FC /* ModelContainerPreview.swift in Sources */,
 				9DE706F82C242DAC00A419E6 /* AchievementViewModel.swift in Sources */,
