@@ -13,7 +13,6 @@ struct MainView: View {
     var body: some View {
         NavigationStack(path: $navPath.path) {
             SplashScreenView()
-
                 .toolbar(.hidden)
                 .navigationDestination(for: Router.Destination.self) { destination in
                     switch destination {
@@ -61,9 +60,7 @@ struct MainView: View {
                         MissionModalityView()
                     case .WorldAfterGacha:
                         WorldAfterGachaView()
-
                     }
-                    
                 }
         }
     }
