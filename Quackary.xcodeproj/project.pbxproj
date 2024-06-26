@@ -92,6 +92,7 @@
 		9DE707032C2512EE00A419E6 /* Gacha Screen Shake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */; };
 		9DE707052C25140300A419E6 /* Gacha Screen 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */; };
 		E40A7C1A2C2ACA1C00736EE1 /* RestrictFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */; };
+		E40A7C1C2C2BB3F700736EE1 /* FavoriteFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */; };
 		E4DC6C272C1968F300DB851F /* ShakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */; };
 		E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */; };
 		E4DC6C2B2C19697200DB851F /* ShakeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */; };
@@ -184,6 +185,7 @@
 		9DE707022C2512EE00A419E6 /* Gacha Screen Shake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen Shake.mp4"; sourceTree = "<group>"; };
 		9DE707042C25140300A419E6 /* Gacha Screen 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gacha Screen 1.mp4"; sourceTree = "<group>"; };
 		E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictFoodView.swift; sourceTree = "<group>"; };
+		E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodView.swift; sourceTree = "<group>"; };
 		E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewModel.swift; sourceTree = "<group>"; };
 		E4DC6C282C19695600DB851F /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
 		E4DC6C2A2C19697200DB851F /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
 				016430102C2AC1BA00643F5B /* MissionModalityView.swift */,
 				011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */,
+				E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				9D00139C2C2A742E006F4D87 /* WorldUpdatedView.swift in Sources */,
 				E4DC6C292C19695600DB851F /* DeviceShakeViewModifier.swift in Sources */,
 				9DE706FA2C242E9300A419E6 /* AchievementView.swift in Sources */,
+				E40A7C1C2C2BB3F700736EE1 /* FavoriteFoodView.swift in Sources */,
 				9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */,
 				9D870E712C25653F002071FC /* SampleData+Achievement.swift in Sources */,
 				9DE706FE2C2510F800A419E6 /* GachaView.swift in Sources */,
