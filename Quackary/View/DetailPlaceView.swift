@@ -11,11 +11,8 @@ import SwiftUI
 struct DetailPlaceView: View {
     @Environment(\.modelContext) private var modelContext
 
-    @Query(filter: #Predicate<Place> { $0.name == "Restoran 1"
-    }) var places: [Place]
-    
     var body: some View {
-        let samplePhoto = places[0].imageNames
+        let samplePhoto = ["photo1", "photo2", "photo3"]
         
         ZStack {
             Color(.whiteBlueLight).ignoresSafeArea()
@@ -31,6 +28,9 @@ struct DetailPlaceView: View {
                             .foregroundColor(Color(red: 69/255.0, green: 123/255.0, blue: 157/255.0))
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 24, height: 24)
+                            .onTapGesture {
+                                Router.shared.path.popLast()
+                            }
                     })
       
                     Spacer()
@@ -52,7 +52,7 @@ struct DetailPlaceView: View {
                         // VSTACK : PLACE (TOP OF VIEW)
                         VStack(alignment: .leading) {
                             // PLACE NAME (TOP)
-                            Text(places[0].name)
+                            Text("B’Steak Grill & Pancake")
                                 .font(Font.custom("Lato", size: 22)
                                     .weight(.heavy)
                                 )
@@ -100,7 +100,12 @@ struct DetailPlaceView: View {
                                 .cornerRadius(10)
                             Spacer()
                         }
-                    }.scrollTargetLayout()
+                        
+                    }
+                    .scrollTargetLayout()
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                    
                 }.scrollTargetBehavior(.viewAligned)
                     
                 // VSTACK : DESCRIPTION
@@ -172,17 +177,6 @@ struct DetailPlaceView: View {
                     HStack {
                         // VSTACK CARD CONTENT
                         VStack(alignment: .leading, spacing: 7) {
-                            // TAG TEXT
-                            Text("🍖 Meat Your Match")
-                                .frame(width: 121)
-                                .font(Font.custom("Lato", size: 11))
-                                .kerning(0.0066)
-                                .foregroundColor(Color(red: 0.27, green: 0.48, blue: 0.62))
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 4)
-                                .background(Color(red: 1, green: 1, blue: 0.99))
-                                .cornerRadius(13)
-                                
                             Text("Visit this place to get the reward!")
                                 .font(
                                     Font.custom("Lato", size: 16)
