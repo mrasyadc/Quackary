@@ -12,7 +12,7 @@ class Router: ObservableObject {
 
     enum Destination: String, Hashable {
 
-        case SplashScreen, Home, Story, SecondStory, OnBoarding, Missions, Gacha, CheckIn, GoodReward, BadReward, ShareImage, History, DetailPlace, World, CheckInCapturedPhoto, Achievement, Reward, WorldViewUpdated, RestrictFoodView, MissionModalityView, WorldAfterGacha, FavoriteFoodView
+        case SplashScreen, Home, Story, SecondStory, OnBoarding, Missions, Gacha, CheckIn, GoodReward, BadReward, ShareImage, History, DetailPlace, World, CheckInCapturedPhoto, Achievement, Reward, WorldViewUpdated, RestrictFoodView, MissionModalityView, WorldAfterGacha, FavoriteFoodView, FinalOnboarding
     }
 
     static let shared: Router = .init()

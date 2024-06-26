@@ -60,6 +60,8 @@ struct RouteView: View {
                         WorldAfterGachaView()
                     case .FavoriteFoodView:
                         FavoriteFoodView()
+                    case .FinalOnboarding:
+                        FinalOnboardingView()
                     }
                 }
         }

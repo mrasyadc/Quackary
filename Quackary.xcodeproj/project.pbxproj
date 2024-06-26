@@ -14,6 +14,8 @@
 		011A8E4F2C2AF12500D05957 /* Boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A8E4C2C2AF12500D05957 /* Boat.json */; };
 		011A8E502C2AF12500D05957 /* Air Balloon.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A8E4D2C2AF12500D05957 /* Air Balloon.json */; };
 		016430112C2AC1BA00643F5B /* MissionModalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016430102C2AC1BA00643F5B /* MissionModalityView.swift */; };
+		018385692C2BFA93001B32D2 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018385682C2BFA93001B32D2 /* FinalOnboardingView.swift */; };
+		0183856B2C2BFAB7001B32D2 /* Final OnBoarding.json in Resources */ = {isa = PBXBuildFile; fileRef = 0183856A2C2BFAB7001B32D2 /* Final OnBoarding.json */; };
 		01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5CDE02C29B541003E30EA /* WorldView.swift */; };
 		01E567F62C29BEFA00A498B0 /* Main Page Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */; };
 		01E568092C29C10000A498B0 /* Blue Duck Adult.json in Resources */ = {isa = PBXBuildFile; fileRef = 01E567F72C29C10000A498B0 /* Blue Duck Adult.json */; };
@@ -74,7 +76,6 @@
 		9DAAD3A32C227FFF001590F4 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAD3972C227FFF001590F4 /* OFL.txt */; };
 		9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAD3A52C2287AF001590F4 /* FontView.swift */; };
 		9DC119742C1957ED00ECF58C /* QuackaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119732C1957ED00ECF58C /* QuackaryApp.swift */; };
-		9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119752C1957ED00ECF58C /* ContentView.swift */; };
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
 		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
@@ -104,6 +105,8 @@
 		011A8E4C2C2AF12500D05957 /* Boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat.json; sourceTree = "<group>"; };
 		011A8E4D2C2AF12500D05957 /* Air Balloon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Air Balloon.json"; sourceTree = "<group>"; };
 		016430102C2AC1BA00643F5B /* MissionModalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModalityView.swift; sourceTree = "<group>"; };
+		018385682C2BFA93001B32D2 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
+		0183856A2C2BFAB7001B32D2 /* Final OnBoarding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Final OnBoarding.json"; sourceTree = "<group>"; };
 		01B5CDE02C29B541003E30EA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 		01E567F52C29BEFA00A498B0 /* Main Page Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Main Page Background.mp4"; sourceTree = "<group>"; };
 		01E567F72C29C10000A498B0 /* Blue Duck Adult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Blue Duck Adult.json"; sourceTree = "<group>"; };
@@ -165,7 +168,6 @@
 		9DAAD3A52C2287AF001590F4 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		9DC119702C1957ED00ECF58C /* Quackary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quackary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC119732C1957ED00ECF58C /* QuackaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackaryApp.swift; sourceTree = "<group>"; };
-		9DC119752C1957ED00ECF58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0183856C2C2C0480001B32D2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9D531B242C2838D5003092E9 /* SplashScreenView.swift */,
+				9D531B222C2838A6003092E9 /* HomeView.swift */,
+				9D531B262C28391F003092E9 /* StoryFirstView.swift */,
+				9D6B1BA32C2932AE007FDE25 /* StorySecondView.swift */,
+				E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */,
+				E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */,
+				018385682C2BFA93001B32D2 /* FinalOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0183856D2C2C0D42001B32D2 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				01B5CDE02C29B541003E30EA /* WorldView.swift */,
+				011A8E452C2AD9AD00D05957 /* WorldAfterGachaView.swift */,
+				9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		0183856E2C2C0D72001B32D2 /* Modality */ = {
+			isa = PBXGroup;
+			children = (
+				016430102C2AC1BA00643F5B /* MissionModalityView.swift */,
+				011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */,
+			);
+			path = Modality;
+			sourceTree = "<group>";
+		};
+		0183856F2C2C0D8E001B32D2 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				01FD144E2C2A788600D65ECD /* CardView.swift */,
+				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
+				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		018385702C2C0E03001B32D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */,
+				9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */,
+				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
+				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
+				01E5681B2C29C3B300A498B0 /* LottieView.swift */,
+				9DAAD3A52C2287AF001590F4 /* FontView.swift */,
+				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		018385712C2C0E2D001B32D2 /* Gacha */ = {
+			isa = PBXGroup;
+			children = (
+				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
+				9DE706FD2C2510F800A419E6 /* GachaView.swift */,
+			);
+			path = Gacha;
+			sourceTree = "<group>";
+		};
+		018385722C2C0E6A001B32D2 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
+				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
+				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		018385732C2C0EC6001B32D2 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
+				9DE706F92C242E9300A419E6 /* AchievementView.swift */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
 		01E567FF2C29C10000A498B0 /* Duck */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +318,7 @@
 		01E568082C29C10000A498B0 /* LottieJson */ = {
 			isa = PBXGroup;
 			children = (
+				0183856A2C2BFAB7001B32D2 /* Final OnBoarding.json */,
 				01E567FF2C29C10000A498B0 /* Duck */,
 				01E568072C29C10000A498B0 /* Object */,
 			);
@@ -366,35 +454,14 @@
 		E4DC6C232C19674F00DB851F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9DC119752C1957ED00ECF58C /* ContentView.swift */,
-				9D531B222C2838A6003092E9 /* HomeView.swift */,
-				9D531B242C2838D5003092E9 /* SplashScreenView.swift */,
-				9D531B262C28391F003092E9 /* StoryFirstView.swift */,
-				9D6B1BA32C2932AE007FDE25 /* StorySecondView.swift */,
-				9DC119832C195C6D00ECF58C /* ShakeView.swift */,
-				9DAAD3A52C2287AF001590F4 /* FontView.swift */,
-				9DE706F92C242E9300A419E6 /* AchievementView.swift */,
-				9DE706FD2C2510F800A419E6 /* GachaView.swift */,
-				9DE706FF2C25113C00A419E6 /* VideoPlayerView.swift */,
-				9D870E652C252C1B002071FC /* LoopingVideoPlayerView.swift */,
-				9D6B1B9F2C2858B8007FDE25 /* VideoPlayerContainerView.swift */,
-				9D870E632C252BD4002071FC /* VideoPlayerUIView.swift */,
-				922C135A2C29A2E8006E4EB7 /* DetailPlaceView.swift */,
-				01E5681B2C29C3B300A498B0 /* LottieView.swift */,
-				01B5CDE02C29B541003E30EA /* WorldView.swift */,
-				011A8E452C2AD9AD00D05957 /* WorldAfterGachaView.swift */,
-				9D00139B2C2A742E006F4D87 /* WorldUpdatedView.swift */,
-				01E5681D2C29C52000A498B0 /* CheckInCameraView.swift */,
-				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
-				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
-				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
-				E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */,
-				01FD144E2C2A788600D65ECD /* CardView.swift */,
-				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
-				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
-				016430102C2AC1BA00643F5B /* MissionModalityView.swift */,
-				011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */,
-				E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */,
+				0183856C2C2C0480001B32D2 /* Onboarding */,
+				0183856D2C2C0D42001B32D2 /* World */,
+				0183856E2C2C0D72001B32D2 /* Modality */,
+				0183856F2C2C0D8E001B32D2 /* Card */,
+				018385702C2C0E03001B32D2 /* Util */,
+				018385712C2C0E2D001B32D2 /* Gacha */,
+				018385722C2C0E6A001B32D2 /* Place */,
+				018385732C2C0EC6001B32D2 /* Reward */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +566,7 @@
 				9DAAD3A12C227FFF001590F4 /* Lato-Thin.ttf in Resources */,
 				01E5680D2C29C10000A498B0 /* Yellow Duck Adult.json in Resources */,
 				01E568172C29C10000A498B0 /* Tube.json in Resources */,
+				0183856B2C2BFAB7001B32D2 /* Final OnBoarding.json in Resources */,
 				9DAAD39C2C227FFF001590F4 /* Lato-BoldItalic.ttf in Resources */,
 				9DAAD3992C227FFF001590F4 /* Lato-Black.ttf in Resources */,
 				01E568102C29C10000A498B0 /* Yellow Egg.json in Resources */,
@@ -535,7 +603,6 @@
 				9D531B272C28391F003092E9 /* StoryFirstView.swift in Sources */,
 				01FD144D2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift in Sources */,
 				01E5681C2C29C3B300A498B0 /* LottieView.swift in Sources */,
-				9DC119762C1957ED00ECF58C /* ContentView.swift in Sources */,
 				9DE707002C25113C00A419E6 /* VideoPlayerView.swift in Sources */,
 				9D870E642C252BD4002071FC /* VideoPlayerUIView.swift in Sources */,
 				011A8E4A2C2AEE7200D05957 /* RewardState.swift in Sources */,
@@ -570,6 +637,7 @@
 				9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */,
 				9D531B212C283298003092E9 /* Router.swift in Sources */,
 				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
+				018385692C2BFA93001B32D2 /* FinalOnboardingView.swift in Sources */,
 				9DAAD3A62C2287AF001590F4 /* FontView.swift in Sources */,
 				01B5CDE12C29B541003E30EA /* WorldView.swift in Sources */,
 				E40A7C1A2C2ACA1C00736EE1 /* RestrictFoodView.swift in Sources */,
@@ -714,7 +782,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = W64G46TNFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -745,7 +813,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = HQSPL9G29Z;
+				DEVELOPMENT_TEAM = W64G46TNFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
