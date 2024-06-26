@@ -80,6 +80,7 @@
 		9DC1197A2C1957EE00ECF58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC119792C1957EE00ECF58C /* Assets.xcassets */; };
 		9DC1197D2C1957EE00ECF58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */; };
 		9DC119842C195C6D00ECF58C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC119832C195C6D00ECF58C /* ShakeView.swift */; };
+		9DD6820A2C2BBFC100F6D706 /* DetailPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD682092C2BBFC100F6D706 /* DetailPlaceViewModel.swift */; };
 		9DE706F02C22AC8400A419E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706EF2C22AC8400A419E6 /* User.swift */; };
 		9DE706F22C239D5C00A419E6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F12C239D5C00A419E6 /* Place.swift */; };
 		9DE706F42C239E7D00A419E6 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE706F32C239E7D00A419E6 /* Achievement.swift */; };
@@ -172,6 +173,7 @@
 		9DC119792C1957EE00ECF58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC1197C2C1957EE00ECF58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DC119832C195C6D00ECF58C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
+		9DD682092C2BBFC100F6D706 /* DetailPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewModel.swift; sourceTree = "<group>"; };
 		9DE706EF2C22AC8400A419E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9DE706F12C239D5C00A419E6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		9DE706F32C239E7D00A419E6 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
@@ -384,15 +386,12 @@
 				01FD144C2C29CE3600D65ECD /* CheckInCapturedPhotoView.swift */,
 				01E5681F2C29CB3D00A498B0 /* CameraView.swift */,
 				586259EE2C288D0400B2DE8B /* RewardsClaimView.swift */,
-
 				E40A7C192C2ACA1C00736EE1 /* RestrictFoodView.swift */,
-
 				01FD144E2C2A788600D65ECD /* CardView.swift */,
 				01FD14502C2A9DBD00D65ECD /* BlueCard.swift */,
 				01FD14522C2A9DCD00D65ECD /* YellowCard.swift */,
 				016430102C2AC1BA00643F5B /* MissionModalityView.swift */,
 				011A8E472C2AEDA900D05957 /* WeekStarterModalityView.swift */,
-
 				E40A7C1B2C2BB3F600736EE1 /* FavoriteFoodView.swift */,
 			);
 			path = View;
@@ -404,6 +403,7 @@
 				E4DC6C262C1968F300DB851F /* ShakeViewModel.swift */,
 				9DE706F72C242DAC00A419E6 /* AchievementViewModel.swift */,
 				9D6B1B9D2C285871007FDE25 /* VideoPLayerViewModel.swift */,
+				9DD682092C2BBFC100F6D706 /* DetailPlaceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -566,6 +566,7 @@
 				9D870E7E2C2799D1002071FC /* SwiftDataInsertion.swift in Sources */,
 				011A8E482C2AEDA900D05957 /* WeekStarterModalityView.swift in Sources */,
 				9D531B252C2838D6003092E9 /* SplashScreenView.swift in Sources */,
+				9DD6820A2C2BBFC100F6D706 /* DetailPlaceViewModel.swift in Sources */,
 				9D6B1BA02C2858B8007FDE25 /* VideoPlayerContainerView.swift in Sources */,
 				9D531B212C283298003092E9 /* Router.swift in Sources */,
 				9DE706F62C239F7A00A419E6 /* Mission.swift in Sources */,
@@ -713,7 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
@@ -744,7 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Quackary/Preview Content\"";
-				DEVELOPMENT_TEAM = W64G46TNFY;
+				DEVELOPMENT_TEAM = HQSPL9G29Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quackary/Info.plist;
